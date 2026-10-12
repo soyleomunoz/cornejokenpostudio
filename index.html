@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>International Cornejo Kenpo Studio | Clases de Kenpo Karate en Maipú</title>
+<meta name="description" content="Escuela de Kenpo Karate en Maipú dirigida por el instructor Daniel Cornejo, Black Belt. Defensa personal, disciplina y condición física para todas las edades. Escuela afiliada a KenpoChile. Agenda tu clase de prueba.">
+<meta name="keywords" content="kenpo karate maipu, artes marciales maipu, defensa personal santiago, karate para niños maipu, clases de kenpo, kenpochile, daniel cornejo">
+<meta name="author" content="International Cornejo Kenpo Studio">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cornejokenpo.cl/">
+<meta name="theme-color" content="#0E0D0C">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="International Cornejo Kenpo Studio">
+<meta property="og:url" content="https://cornejokenpo.cl/">
+<meta property="og:title" content="International Cornejo Kenpo Studio | Kenpo Karate en Maipú">
+<meta property="og:description" content="Entrena con disciplina. Avanza con confianza. Clases de Kenpo Karate para todas las edades en Maipú, con el instructor Daniel Cornejo. Escuela afiliada a KenpoChile.">
+<meta property="og:image" content="https://cornejokenpo.cl/img/insignia-cornejo.webp">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="International Cornejo Kenpo Studio | Kenpo Karate en Maipú">
+<meta name="twitter:description" content="Entrena con disciplina. Avanza con confianza. Clases de Kenpo Karate para todas las edades en Maipú.">
+<meta name="twitter:image" content="https://cornejokenpo.cl/img/insignia-cornejo.webp">
+
+<link rel="icon" type="image/webp" href="img/insignia-cornejo.webp">
+<link rel="apple-touch-icon" href="img/insignia-cornejo.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "International Cornejo Kenpo Studio",
+  "description": "Escuela de Kenpo Karate en Maipú, afiliada a KenpoChile. Clases de defensa personal, técnica y condición física para todas las edades.",
+  "image": "https://cornejokenpo.cl/img/insignia-cornejo.webp",
+  "url": "https://cornejokenpo.cl/",
+  "telephone": "+56986534872",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Padre Alberto Hurtado 1709",
+    "addressLocality": "Maipú",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/danielcornejocornejo/",
+    "https://www.facebook.com/daniel.cornejocornejo.1",
+    "https://kenpochile.cl/"
+  ],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Thursday"], "opens": "17:30", "closes": "20:30" }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   SISTEMA DE DISEÑO - derivado de paleta-cornejo-kenpo.txt
+   Negro insignia + oro kenpo + blanco tigre + café oscuro
+   ============================================================ */
+:root{
+  /* Base */
+  --negro:#0E0D0C;
+  --carbon:#1A1714;
+  --cafe:#2B211B;
+  --hueso:#F3EEE5;
+
+  /* Oro */
+  --oro:#E9B824;
+  --oro-prof:#C9971A;
+  --oro-claro:#F5D46B;
+  --grad-oro:linear-gradient(135deg,#C9971A 0%,#E9B824 52%,#F5D46B 100%);
+  --grad-prof:linear-gradient(180deg,#0E0D0C 0%,#2B211B 100%);
+  --glow:radial-gradient(circle,rgba(233,184,36,.18),transparent 65%);
+
+  /* Texto */
+  --blanco:#F8F6F1;
+  --tx-osc:#1E1915;
+  --tx2-oscuro:#A39C93;   /* secundario sobre fondo oscuro */
+  --tx2-claro:#6B6259;    /* secundario sobre fondo claro  */
+
+  /* Cinturones */
+  --c-blanco:#F8F6F1; --c-amarillo:#E9C43A; --c-naranjo:#D9782E;
+  --c-morado:#7A4E9C;  --c-azul:#2F5FA8;    --c-verde:#3E8E4E;
+  --c-cafe:#6B4428;    --c-negro:#0E0D0C;
+
+  /* Bordes y superficies */
+  --borde:rgba(233,184,36,.25);
+  --borde-fuerte:rgba(233,184,36,.55);
+  --borde-neutro:rgba(248,246,241,.10);
+
+  /* Forma: un solo sistema de radios */
+  --r-sm:8px; --r:12px; --r-lg:14px; --r-pill:999px;
+
+  /* Ritmo */
+  --sec:clamp(4.5rem,9vw,8rem);
+  --gut:clamp(1.15rem,4vw,2.5rem);
+  --max:1240px;
+
+  /* Tipografía */
+  --display:'Montserrat','Segoe UI',system-ui,-apple-system,sans-serif;
+  --texto:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:86px;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--texto);
+  background:var(--negro);
+  color:var(--blanco);
+  line-height:1.65;
+  font-size:1rem;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body.sin-scroll{overflow:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+ul{list-style:none}
+
+/* Grano sutil global, fijo y sin coste de repintado al hacer scroll */
+.grano{
+  position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+}
+
+/* Foco visible accesible en todo el sitio */
+:focus-visible{outline:2px solid var(--oro);outline-offset:3px;border-radius:4px}
+
+.env{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--gut)}
+
+/* ---------- Tipografía display ---------- */
+.t-xxl,.t-xl,.t-l,.t-m{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  line-height:1.03;letter-spacing:-.015em;
+}
+.t-xxl{font-size:clamp(2.45rem,6.6vw,4.9rem)}
+.t-xl{font-size:clamp(2rem,4.8vw,3.4rem)}
+.t-l{font-size:clamp(1.45rem,2.9vw,2.05rem);letter-spacing:0}
+.t-m{font-size:1.05rem;letter-spacing:.01em;line-height:1.25}
+.oro{color:var(--oro)}
+.lead{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--tx2-oscuro);max-width:58ch}
+.claro .lead{color:var(--tx2-claro)}
+
+/* Etiqueta pequeña: usada con mucha moderación (3 en toda la página) */
+.rotulo{
+  display:inline-block;font-family:var(--display);font-weight:700;
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--oro);margin-bottom:1rem;
+}
+
+/* Filete dorado decorativo bajo los títulos de sección */
+.filete{width:62px;height:3px;background:var(--grad-oro);border-radius:2px;margin-top:1.25rem}
+
+/* ---------- Botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:.83rem;letter-spacing:.07em;white-space:nowrap;
+  padding:1rem 1.75rem;border-radius:var(--r-pill);border:1px solid transparent;
+  cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s var(--ease),color .25s var(--ease);
+}
+.btn-oro{background:var(--grad-oro);color:#0E0D0C;box-shadow:0 10px 30px rgba(233,184,36,.18)}
+.btn-oro:hover{background:linear-gradient(135deg,#E9B824,#F5D46B);transform:translateY(-2px);box-shadow:0 16px 42px rgba(233,184,36,.34)}
+.btn-oro:active{transform:scale(.98)}
+.btn-linea{background:transparent;border-color:var(--oro);color:var(--oro)}
+.btn-linea:hover{background:rgba(233,184,36,.1);border-color:var(--oro-claro);color:var(--oro-claro);transform:translateY(-2px)}
+.btn-linea:active{transform:scale(.98)}
+.claro .btn-linea{border-color:var(--oro-prof);color:#8A6400}
+.claro .btn-linea:hover{background:rgba(201,151,26,.12);color:#6E4F00;border-color:var(--oro-prof)}
+.btn-bloque{width:100%}
+
+/* ---------- Navegación ---------- */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;height:72px;
+  display:flex;align-items:center;
+  background:rgba(14,13,12,0);border-bottom:1px solid transparent;
+  transition:background .35s var(--ease),border-color .35s var(--ease),backdrop-filter .35s var(--ease);
+}
+.nav.fija{background:rgba(14,13,12,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--borde)}
+.nav .env{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.marca{display:flex;align-items:center;gap:.7rem;flex-shrink:0}
+.marca img{width:44px;height:44px;border-radius:50%}
+.marca span{
+  font-family:var(--display);font-weight:900;text-transform:uppercase;
+  font-size:.74rem;letter-spacing:.11em;line-height:1.25;color:var(--blanco);
+}
+.marca span b{color:var(--oro);font-weight:900}
+.menu{display:flex;align-items:center;gap:1.6rem}
+.menu a{
+  font-family:var(--display);font-weight:700;font-size:.76rem;
+  text-transform:uppercase;letter-spacing:.09em;color:var(--blanco);
+  position:relative;padding:.3rem 0;transition:color .25s var(--ease);
+}
+.menu a::after{
+  content:'';position:absolute;left:0;bottom:-2px;width:0;height:2px;
+  background:var(--grad-oro);transition:width .3s var(--ease);
+}
+.menu a:hover{color:var(--oro)}
+.menu a:hover::after{width:100%}
+.nav .btn{padding:.78rem 1.3rem;font-size:.74rem}
+.burger{display:none;background:none;border:1px solid var(--borde);border-radius:var(--r-sm);padding:.55rem;cursor:pointer}
+.burger svg{width:22px;height:22px;stroke:var(--oro);fill:none;stroke-width:2;stroke-linecap:round}
+
+@media (max-width:980px){
+  .menu,.nav>.env>.btn{display:none}
+  .burger{display:block}
+}
+.panel{
+  position:fixed;inset:0;z-index:49;background:rgba(14,13,12,.985);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  display:flex;flex-direction:column;justify-content:center;gap:.4rem;
+  padding:6rem var(--gut) 3rem;
+  opacity:0;visibility:hidden;transform:translateY(-12px);
+  transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s;
+}
+.panel.abierto{opacity:1;visibility:visible;transform:translateY(0)}
+.panel a{
+  font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:1.35rem;letter-spacing:.04em;padding:.7rem 0;
+  border-bottom:1px solid var(--borde-neutro);
+}
+.panel a:last-of-type{border-bottom:none}
+.panel .btn{margin-top:1.6rem}
+
+/* ============================================================
+   HERO - split asimétrico 1.05fr / .95fr
+   ============================================================ */
+.hero{
+  position:relative;min-height:100dvh;display:flex;align-items:center;
+  padding:calc(72px + 2.5rem) 0 3.5rem;overflow:hidden;
+  background:var(--grad-prof);
+}
+.hero::before{
+  content:'';position:absolute;top:-18%;left:-14%;width:72vw;height:72vw;
+  max-width:880px;max-height:880px;background:var(--glow);pointer-events:none;
+}
+/* Líneas diagonales que sugieren movimiento */
+.hero::after{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.16;
+  background:repeating-linear-gradient(118deg,transparent 0 58px,rgba(233,184,36,.16) 58px 59px);
+  mask-image:linear-gradient(100deg,transparent 48%,#000 100%);
+  -webkit-mask-image:linear-gradient(100deg,transparent 48%,#000 100%);
+}
+.hero .env{position:relative;z-index:2}
+.hero-rejilla{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{margin:.3rem 0 1.3rem}
+.hero .lead{margin-bottom:2.2rem;max-width:40ch}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.85rem}
+
+/* Composición de la insignia sobre la foto */
+.hero-visual{position:relative;justify-self:center;width:100%;max-width:470px}
+.marco-foto{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--borde);aspect-ratio:4/5;
+  box-shadow:0 34px 90px rgba(0,0,0,.6);
+}
+.marco-foto img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.1) brightness(.84)}
+/* Viñeteado cinematográfico */
+.marco-foto::after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 38%,transparent 32%,rgba(14,13,12,.82) 100%),
+             linear-gradient(to top,rgba(14,13,12,.9) 2%,transparent 48%);
+}
+.sello{
+  position:absolute;right:-14px;bottom:-14px;width:clamp(104px,20vw,148px);
+  aspect-ratio:1;border-radius:50%;z-index:3;
+  background:var(--negro);padding:9px;
+  border:2px solid var(--oro);
+  box-shadow:0 0 0 7px rgba(14,13,12,.95),0 0 56px rgba(233,184,36,.4);
+}
+.sello img{width:100%;height:100%;border-radius:50%;object-fit:contain}
+
+/* Marca de agua de la insignia en secciones oscuras */
+.agua{
+  position:absolute;pointer-events:none;opacity:.045;
+  width:min(560px,78vw);aspect-ratio:1;filter:grayscale(1) brightness(2.6);
+}
+
+/* ---------- Franja de credenciales (bajo el hero, nunca dentro) ---------- */
+.credenciales{background:var(--carbon);border-block:1px solid var(--borde-neutro)}
+.credenciales ul{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  text-align:center;padding:2.1rem 0;gap:1.3rem;
+}
+.credenciales li+li{border-left:1px solid var(--borde-neutro)}
+.credenciales b{
+  display:block;font-family:var(--display);font-weight:900;
+  font-size:clamp(1.3rem,2.4vw,1.75rem);color:var(--oro);line-height:1.1;
+}
+.credenciales small{
+  display:block;margin-top:.4rem;font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tx2-oscuro);font-weight:500;
+}
+@media (max-width:700px){
+  .credenciales ul{grid-template-columns:repeat(2,1fr);gap:1.6rem 1rem}
+  .credenciales li:nth-child(odd){border-left:none}
+  .credenciales li:nth-child(3),.credenciales li:nth-child(4){padding-top:1.4rem;border-top:1px solid var(--borde-neutro)}
+}
+
+/* ============================================================
+   SECCIONES
+   ============================================================ */
+section{position:relative}
+.s-negra{background:var(--negro);padding-block:var(--sec);overflow:hidden}
+.s-cafe{background:linear-gradient(180deg,#1A1714,#2B211B);padding-block:var(--sec);overflow:hidden}
+.s-clara{background:var(--hueso);color:var(--tx-osc);padding-block:var(--sec)}
+.s-clara .t-xxl,.s-clara .t-xl,.s-clara .t-l,.s-clara .t-m{color:var(--tx-osc)}
+.cabecera{max-width:60ch;margin-bottom:clamp(2.5rem,5vw,3.8rem)}
+.cabecera p{margin-top:1.4rem}
+
+/* --- Qué es Kenpo: split texto/foto (familia 1 de split) --- */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.duo-txt p+p{margin-top:1.1rem}
+.marco-oro{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--borde);aspect-ratio:5/4;
+}
+.marco-oro img{width:100%;height:100%;object-fit:cover;filter:saturate(.76) contrast(1.08) brightness(.86)}
+.marco-oro::after{content:'';position:absolute;inset:0;background:linear-gradient(140deg,rgba(14,13,12,.5),transparent 55%)}
+.notas{margin-top:2rem;display:grid;gap:.85rem}
+.notas li{display:flex;gap:.85rem;align-items:flex-start;color:var(--tx2-oscuro)}
+.notas svg{width:19px;height:19px;flex-shrink:0;margin-top:.3rem;stroke:var(--oro);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* --- Beneficios: bento asimétrico de 6 celdas --- */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem}
+.celda{
+  background:var(--carbon);border:1px solid var(--borde);border-radius:var(--r-lg);
+  padding:1.85rem;display:flex;flex-direction:column;justify-content:flex-end;gap:.65rem;
+  min-height:188px;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease);
+}
+.celda:hover{transform:translateY(-5px);border-color:var(--borde-fuerte);box-shadow:0 20px 48px rgba(0,0,0,.5)}
+.celda svg.ico{width:28px;height:28px;stroke:var(--oro);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:.35rem}
+.celda p{font-size:.93rem;color:var(--tx2-oscuro)}
+.c-a{grid-column:span 2} .c-b{grid-column:span 2} .c-c{grid-column:span 2}
+.c-d{grid-column:span 3} .c-e{grid-column:span 3}
+/* Celda con fotografía real: variación visual dentro del bento */
+.c-foto{
+  grid-column:span 6;min-height:260px;padding:0;border-color:var(--borde-fuerte);
+  display:grid;grid-template-columns:1.1fr .9fr;align-items:stretch;
+}
+.c-foto .c-cuerpo{padding:2.2rem;display:flex;flex-direction:column;justify-content:center;gap:.7rem}
+.c-foto figure{position:relative;overflow:hidden}
+.c-foto img{width:100%;height:100%;object-fit:cover;filter:saturate(.74) contrast(1.06) brightness(.82)}
+.c-foto figure::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--carbon) 0%,transparent 42%)}
+/* Celda con gradiente de profundidad */
+.c-grad{background:linear-gradient(145deg,#2B211B,#1A1714 62%);border-color:var(--borde-fuerte)}
+.c-grad::before{content:'';position:absolute;top:-45%;right:-25%;width:300px;height:300px;background:var(--glow)}
+
+@media (max-width:900px){
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .c-a,.c-b,.c-c,.c-d,.c-e{grid-column:span 1}
+  .c-foto{grid-column:span 2;grid-template-columns:1fr}
+  .c-foto figure{min-height:200px;order:-1}
+  .c-foto figure::after{background:linear-gradient(0deg,var(--carbon) 0%,transparent 55%)}
+}
+@media (max-width:560px){
+  .bento{grid-template-columns:1fr}
+  .c-foto{grid-column:span 1}
+}
+
+/* --- Camino del cinturón: carril horizontal con scroll-snap --- */
+.carril{
+  display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:.4rem .2rem 1.6rem;margin-inline:calc(var(--gut)*-1);
+  padding-inline:var(--gut);scrollbar-width:thin;
+  scrollbar-color:var(--oro-prof) transparent;
+}
+.carril::-webkit-scrollbar{height:5px}
+.carril::-webkit-scrollbar-track{background:rgba(248,246,241,.07);border-radius:9px}
+.carril::-webkit-scrollbar-thumb{background:var(--oro-prof);border-radius:9px}
+.grado{
+  scroll-snap-align:start;flex:0 0 192px;background:var(--carbon);
+  border:1px solid var(--borde-neutro);border-radius:var(--r);
+  padding:1.5rem 1.25rem 1.3rem;position:relative;overflow:hidden;
+  transition:transform .3s var(--ease),border-color .3s var(--ease);
+}
+.grado:hover{transform:translateY(-4px);border-color:var(--borde-fuerte)}
+/* Franja de tela del cinturón en el borde superior de la tarjeta */
+.grado::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:7px;background:var(--tela);
+  box-shadow:inset 0 -1px 2px rgba(0,0,0,.45);
+}
+.grado.es-negro::before{background:#0E0D0C;border-bottom:1px solid var(--oro)}
+.grado .nudo{
+  width:34px;height:14px;border-radius:3px;background:var(--tela);margin-bottom:1rem;
+  box-shadow:inset 0 -2px 3px rgba(0,0,0,.35);position:relative;
+}
+.grado.es-negro .nudo{border:1px solid var(--oro-prof)}
+.grado .nudo::after{
+  content:'';position:absolute;left:11px;top:0;width:11px;height:100%;
+  background:rgba(0,0,0,.14);
+}
+.grado h3{font-family:var(--display);font-weight:800;font-size:.95rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.2}
+.grado .orden{display:block;font-family:var(--display);font-weight:900;font-size:.68rem;letter-spacing:.2em;color:var(--oro);margin-bottom:.5rem}
+.grado p{font-size:.78rem;color:var(--tx2-oscuro);margin-top:.5rem}
+.pista{display:flex;align-items:center;gap:.6rem;margin-top:.6rem;font-size:.8rem;color:var(--tx2-oscuro)}
+.pista svg{width:16px;height:16px;stroke:var(--oro);fill:none;stroke-width:2}
+
+/* --- Instructor: retrato en anillo dorado + texto (familia distinta) --- */
+.instructor{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.retrato{position:relative;max-width:400px;justify-self:center;width:100%}
+.retrato .anillo{
+  position:absolute;inset:-16px;border-radius:50%;
+  border:1px solid var(--borde);
+}
+.retrato .anillo::before{
+  content:'';position:absolute;inset:-14px;border-radius:50%;
+  border:1px dashed rgba(233,184,36,.22);
+}
+.retrato figure{
+  position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;
+  border:2px solid var(--oro);box-shadow:0 0 70px rgba(233,184,36,.2);
+}
+.retrato img{width:100%;height:100%;object-fit:cover;object-position:62% 6%;filter:saturate(.8) contrast(1.1) brightness(.9)}
+.credencial{
+  display:inline-flex;align-items:center;gap:.6rem;background:rgba(233,184,36,.09);
+  border:1px solid var(--borde);border-radius:var(--r-pill);
+  padding:.5rem 1.05rem;font-size:.76rem;font-weight:600;color:var(--oro-claro);
+  letter-spacing:.05em;margin-bottom:1.2rem;
+}
+.instructor-txt p{color:var(--tx2-oscuro)}
+.instructor-txt p+p{margin-top:1rem}
+.hitos{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.hitos div{border-top:2px solid var(--oro-prof);padding-top:.9rem}
+.hitos b{display:block;font-family:var(--display);font-weight:900;font-size:1.45rem;color:var(--oro)}
+.hitos small{font-size:.74rem;color:var(--tx2-oscuro);line-height:1.4;display:block;margin-top:.2rem}
+
+/* --- Cómo empezar: pasos sobre una línea horizontal --- */
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;position:relative;margin-top:1rem}
+.pasos::before{
+  content:'';position:absolute;top:26px;left:7%;right:7%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--oro-prof),var(--oro-prof),transparent);
+  opacity:.55;
+}
+.paso{position:relative;text-align:center}
+.paso .num{
+  width:52px;height:52px;border-radius:50%;margin:0 auto 1.3rem;
+  display:grid;place-items:center;background:var(--negro);
+  border:1px solid var(--oro);color:var(--oro);
+  font-family:var(--display);font-weight:900;font-size:1rem;position:relative;z-index:2;
+}
+.s-cafe .paso .num{background:#1F1813}
+.paso h3{font-family:var(--display);font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:.03em;margin-bottom:.5rem}
+.paso p{font-size:.88rem;color:var(--tx2-oscuro)}
+@media (max-width:860px){
+  .pasos{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.2rem}
+  .pasos::before{display:none}
+}
+@media (max-width:460px){.pasos{grid-template-columns:1fr;text-align:left}
+  .paso{display:grid;grid-template-columns:52px 1fr;gap:1.1rem;text-align:left;align-items:start}
+  .paso .num{margin:0}
+}
+
+/* --- Bloque claro: horarios + ubicación + preguntas --- */
+.horarios{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+.sede{
+  background:#fff;border:1px solid rgba(30,25,21,.1);border-radius:var(--r-lg);
+  padding:1.7rem;box-shadow:0 10px 30px rgba(43,33,27,.07);
+}
+.sede+.sede{margin-top:1.2rem}
+.sede header{display:flex;align-items:flex-start;gap:.85rem;margin-bottom:1.15rem}
+.sede .punto{
+  width:38px;height:38px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;
+  background:var(--negro);
+}
+.sede .punto svg{width:18px;height:18px;stroke:var(--oro);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sede h3{font-family:var(--display);font-weight:800;font-size:1rem;text-transform:uppercase;letter-spacing:.02em;line-height:1.3}
+.sede header p{font-size:.86rem;color:var(--tx2-claro);margin-top:.25rem}
+.tabla{width:100%;border-collapse:collapse;font-size:.9rem}
+.tabla th{
+  text-align:left;font-family:var(--display);font-weight:800;font-size:.66rem;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--tx2-claro);
+  padding-bottom:.6rem;border-bottom:2px solid var(--oro);
+}
+.tabla td{padding:.85rem 0;border-bottom:1px solid rgba(30,25,21,.08)}
+.tabla tr:last-child td{border-bottom:none}
+.tabla td:first-child{font-weight:600}
+.tabla .hora{
+  font-family:var(--display);font-weight:800;color:var(--tx-osc);
+  white-space:nowrap;text-align:right;
+}
+.mapa{
+  border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(30,25,21,.12);
+  box-shadow:0 10px 30px rgba(43,33,27,.07);background:#e9e3d7;
+}
+.mapa iframe{width:100%;height:330px;border:0;display:block;filter:saturate(.88)}
+.dato{display:flex;gap:.85rem;align-items:flex-start;padding:1.1rem 1.3rem;background:#fff;border-top:1px solid rgba(30,25,21,.08)}
+.dato svg{width:18px;height:18px;flex-shrink:0;margin-top:.25rem;stroke:var(--oro-prof);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.dato p{font-size:.86rem;color:var(--tx2-claro)}
+.dato strong{display:block;color:var(--tx-osc);font-weight:600;margin-bottom:.1rem}
+
+/* Aviso de dato pendiente, visible y editable */
+.pendiente{
+  display:inline-block;background:rgba(233,184,36,.16);border:1px dashed var(--oro-prof);
+  border-radius:var(--r-sm);padding:.1rem .5rem;font-size:.78rem;font-weight:600;
+  color:#7A5600;letter-spacing:.01em;
+}
+.s-negra .pendiente,.s-cafe .pendiente{color:var(--oro-claro);background:rgba(233,184,36,.1)}
+
+/* Valores: bloque de consulta (sin precios inventados) */
+.valores{
+  margin-top:clamp(2.5rem,5vw,3.5rem);background:var(--negro);color:var(--blanco);
+  border-radius:var(--r-lg);padding:clamp(1.9rem,4vw,2.8rem);
+  display:flex;flex-wrap:wrap;gap:1.6rem;align-items:center;justify-content:space-between;
+  position:relative;overflow:hidden;
+}
+.valores::before{content:'';position:absolute;top:-60%;right:-8%;width:420px;height:420px;background:var(--glow);pointer-events:none}
+.valores>div{position:relative;z-index:2;max-width:46ch}
+.valores h3{color:var(--blanco)}
+.valores p{color:var(--tx2-oscuro);margin-top:.7rem;font-size:.95rem}
+.valores .btn{position:relative;z-index:2}
+
+/* --- Preguntas frecuentes --- */
+.faq{max-width:860px;margin-inline:auto}
+.item{border-bottom:1px solid rgba(30,25,21,.13)}
+.item:first-child{border-top:1px solid rgba(30,25,21,.13)}
+.item button{
+  width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  padding:1.45rem 0;font-family:var(--display);font-weight:800;
+  font-size:clamp(.95rem,1.7vw,1.06rem);text-transform:uppercase;
+  letter-spacing:.01em;line-height:1.35;color:var(--tx-osc);
+  transition:color .25s var(--ease);
+}
+.item button:hover{color:var(--oro-prof)}
+.cruz{width:22px;height:22px;flex-shrink:0;position:relative}
+.cruz::before,.cruz::after{
+  content:'';position:absolute;background:var(--oro-prof);border-radius:2px;
+  transition:transform .3s var(--ease);
+}
+.cruz::before{top:50%;left:0;width:100%;height:2px;margin-top:-1px}
+.cruz::after{left:50%;top:0;height:100%;width:2px;margin-left:-1px}
+.item[aria-expanded="true"] .cruz::after{transform:rotate(90deg)}
+.resp{overflow:hidden;max-height:0;transition:max-height .38s var(--ease)}
+.resp div{padding:0 0 1.5rem;color:var(--tx2-claro);font-size:.95rem;max-width:68ch}
+.resp p+p{margin-top:.8rem}
+
+/* --- Afiliación: sello circular con texto en arco --- */
+.afiliacion{display:grid;grid-template-columns:260px 1fr;gap:clamp(2rem,5vw,3.8rem);align-items:center}
+.sello-fed{position:relative;width:230px;height:230px;justify-self:center}
+.sello-fed .arco{position:absolute;inset:0;animation:girar 44s linear infinite}
+.sello-fed .arco text{
+  font-family:var(--display);font-weight:800;font-size:11.6px;
+  letter-spacing:3.3px;fill:var(--oro);text-transform:uppercase;
+}
+.sello-fed .centro{
+  position:absolute;inset:34px;border-radius:50%;background:var(--negro);
+  border:1px solid var(--borde-fuerte);display:grid;place-items:center;
+  text-align:center;padding:1.2rem;box-shadow:0 0 54px rgba(233,184,36,.2);
+}
+.sello-fed .centro strong{
+  display:block;font-family:var(--display);font-weight:900;font-size:1.5rem;
+  color:var(--oro);line-height:1;letter-spacing:.02em;
+}
+.sello-fed .centro small{display:block;font-size:.62rem;letter-spacing:.2em;color:var(--tx2-oscuro);margin-top:.5rem;text-transform:uppercase}
+@keyframes girar{to{transform:rotate(360deg)}}
+.afiliacion-txt p{color:var(--tx2-oscuro)}
+.afiliacion-txt p+p{margin-top:1rem}
+.afiliacion-txt .btn{margin-top:1.8rem}
+
+/* --- Galería: carril de fotografías reales --- */
+.galeria{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  margin-inline:calc(var(--gut)*-1);padding:.3rem var(--gut) 1.5rem;
+  scrollbar-width:thin;scrollbar-color:var(--oro-prof) transparent}
+.galeria::-webkit-scrollbar{height:5px}
+.galeria::-webkit-scrollbar-track{background:rgba(248,246,241,.07);border-radius:9px}
+.galeria::-webkit-scrollbar-thumb{background:var(--oro-prof);border-radius:9px}
+.galeria figure{
+  scroll-snap-align:start;flex:0 0 min(330px,78vw);aspect-ratio:4/3;
+  border-radius:var(--r);overflow:hidden;border:1px solid var(--borde-neutro);
+  transition:border-color .3s var(--ease);
+}
+.galeria figure:hover{border-color:var(--borde-fuerte)}
+.galeria img{width:100%;height:100%;object-fit:cover;filter:saturate(.74) contrast(1.06) brightness(.84);transition:transform .6s var(--ease),filter .4s var(--ease)}
+.galeria figure:hover img{transform:scale(1.045);filter:saturate(.88) contrast(1.06) brightness(.94)}
+
+/* --- Blog --- */
+.notas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.nota{
+  background:var(--carbon);border:1px solid var(--borde-neutro);border-radius:var(--r-lg);
+  overflow:hidden;display:flex;flex-direction:column;text-align:left;width:100%;
+  cursor:pointer;padding:0;transition:transform .35s var(--ease),border-color .35s var(--ease),box-shadow .35s var(--ease);
+}
+.nota:hover{transform:translateY(-5px);border-color:var(--borde-fuerte);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.nota .img{aspect-ratio:16/10;overflow:hidden;background:var(--cafe)}
+.nota .img img{width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.06) brightness(.8);transition:transform .6s var(--ease)}
+.nota:hover .img img{transform:scale(1.05)}
+.nota .cuerpo{padding:1.5rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.nota time{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);font-weight:600}
+.nota h3{font-family:var(--display);font-weight:800;font-size:1.02rem;line-height:1.3;text-transform:none;letter-spacing:0;color:var(--blanco)}
+.nota p{font-size:.88rem;color:var(--tx2-oscuro);flex:1}
+.nota .mas{font-size:.78rem;font-weight:700;color:var(--oro);letter-spacing:.06em;text-transform:uppercase;font-family:var(--display)}
+.blog-pie{margin-top:2.6rem;text-align:center}
+@media (max-width:880px){.notas-grid{grid-template-columns:1fr}}
+
+/* Vista individual de artículo */
+.lector{
+  position:fixed;inset:0;z-index:70;background:var(--negro);
+  overflow-y:auto;overscroll-behavior:contain;
+  opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s;
+}
+.lector.abierto{opacity:1;visibility:visible}
+.lector-barra{
+  position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:1rem var(--gut);background:rgba(14,13,12,.95);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--borde);
+}
+.lector-barra .marca span{font-size:.68rem}
+.cerrar{
+  background:none;border:1px solid var(--borde);border-radius:var(--r-pill);
+  padding:.55rem 1.1rem;cursor:pointer;color:var(--oro);
+  font-family:var(--display);font-weight:800;font-size:.72rem;
+  letter-spacing:.09em;text-transform:uppercase;
+  transition:background .25s var(--ease),border-color .25s var(--ease);
+}
+.cerrar:hover{background:rgba(233,184,36,.12);border-color:var(--oro)}
+.lector article{max-width:760px;margin-inline:auto;padding:clamp(2.5rem,6vw,4.5rem) var(--gut) 5rem}
+.lector .portada{
+  aspect-ratio:16/9;border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--borde);margin-bottom:2.3rem;
+}
+.lector .portada img{width:100%;height:100%;object-fit:cover;filter:saturate(.75) contrast(1.06) brightness(.82)}
+.lector time{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);font-weight:600}
+.lector h1{margin:.8rem 0 1.8rem;font-size:clamp(1.7rem,4vw,2.65rem);text-transform:none;letter-spacing:-.01em;line-height:1.15}
+.lector h2{font-family:var(--display);font-weight:800;font-size:1.22rem;margin:2.4rem 0 .9rem;color:var(--oro-claro);letter-spacing:.01em}
+.lector p{color:var(--tx2-oscuro);margin-bottom:1.05rem}
+.lector article ul{margin:0 0 1.3rem;display:grid;gap:.6rem}
+.lector article li{display:flex;gap:.8rem;color:var(--tx2-oscuro)}
+.lector article li::before{content:'';flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--oro);margin-top:.62rem}
+.lector .cierre{
+  margin-top:3rem;padding:2rem;border:1px solid var(--borde);border-radius:var(--r-lg);
+  background:linear-gradient(140deg,#1A1714,#2B211B);text-align:center;
+}
+.lector .cierre p{margin-bottom:1.4rem;color:var(--blanco);font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.05rem;letter-spacing:.01em}
+.lector .indice{display:grid;gap:1rem;max-width:760px;margin:0 auto;padding:clamp(2.5rem,6vw,4rem) var(--gut) 5rem}
+.lector .indice h1{margin-bottom:.6rem}
+
+/* --- CTA final --- */
+.cierre-cta{
+  position:relative;background:var(--negro);padding-block:clamp(5rem,10vw,8.5rem);
+  text-align:center;overflow:hidden;
+}
+.cierre-cta::before{
+  content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:min(1000px,130vw);aspect-ratio:1;background:var(--glow);pointer-events:none;
+}
+.cierre-cta .env{position:relative;z-index:2}
+.cierre-cta h2{max-width:18ch;margin-inline:auto}
+.cierre-cta p{margin:1.5rem auto 2.4rem;max-width:52ch;color:var(--tx2-oscuro)}
+.cierre-cta .hero-ctas{justify-content:center}
+
+/* --- Formulario de contacto --- */
+.contacto{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.form{
+  background:var(--carbon);border:1px solid var(--borde);border-radius:var(--r-lg);
+  padding:clamp(1.6rem,3.5vw,2.4rem);
+}
+.campo{margin-bottom:1.2rem}
+.campo label{
+  display:block;font-family:var(--display);font-weight:700;font-size:.72rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--blanco);margin-bottom:.5rem;
+}
+.campo input,.campo select{
+  width:100%;background:#120F0D;border:1px solid rgba(248,246,241,.17);
+  border-radius:var(--r-sm);padding:.88rem 1rem;color:var(--blanco);font-size:.95rem;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+.campo select{appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E9B824' stroke-width='2.4' stroke-linecap='round'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 1rem center;background-size:16px;padding-right:2.6rem}
+.campo input::placeholder{color:#7E776F}
+.campo input:focus,.campo select:focus{outline:none;border-color:var(--oro);box-shadow:0 0 0 3px rgba(233,184,36,.17)}
+.campo .ayuda{font-size:.76rem;color:var(--tx2-oscuro);margin-top:.4rem}
+.campo .error{display:none;font-size:.78rem;color:#F0A58A;margin-top:.4rem;font-weight:600}
+.campo.mal input,.campo.mal select{border-color:#D9634A}
+.campo.mal .error{display:block}
+.form .btn{margin-top:.5rem}
+.form .aviso{
+  margin-top:1rem;font-size:.78rem;color:var(--tx2-oscuro);text-align:center;line-height:1.5;
+}
+.estado{
+  display:none;margin-top:1.1rem;padding:.95rem 1.1rem;border-radius:var(--r-sm);
+  background:rgba(233,184,36,.12);border:1px solid var(--borde-fuerte);
+  font-size:.88rem;color:var(--oro-claro);
+}
+.estado.visible{display:block}
+.contacto-datos{display:grid;gap:1rem}
+.enlace-dato{
+  display:flex;gap:1rem;align-items:center;padding:1.25rem 1.4rem;
+  background:var(--carbon);border:1px solid var(--borde-neutro);border-radius:var(--r);
+  transition:border-color .3s var(--ease),transform .3s var(--ease);
+}
+.enlace-dato:hover{border-color:var(--borde-fuerte);transform:translateX(4px)}
+.enlace-dato svg{width:21px;height:21px;flex-shrink:0;stroke:var(--oro);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.enlace-dato b{display:block;font-family:var(--display);font-weight:800;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;color:var(--tx2-oscuro);margin-bottom:.15rem}
+.enlace-dato span{font-size:.95rem;color:var(--blanco)}
+
+/* --- Footer --- */
+footer{background:var(--negro);border-top:1px solid var(--borde);padding-top:clamp(3rem,6vw,4.5rem)}
+.pie-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:clamp(2rem,5vw,3.5rem);padding-bottom:3rem}
+.pie-marca{display:flex;align-items:center;gap:.9rem;margin-bottom:1.2rem}
+.pie-marca img{width:62px;height:62px;border-radius:50%}
+.pie-marca strong{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:.85rem;letter-spacing:.09em;line-height:1.3;display:block}
+.pie-marca em{font-style:normal;font-size:.74rem;color:var(--oro);letter-spacing:.09em;text-transform:uppercase;font-weight:600}
+footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
+.redes{display:flex;gap:.7rem;margin-top:1.5rem}
+.redes a{
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--borde);transition:background .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease);
+}
+.redes a:hover{background:rgba(233,184,36,.13);border-color:var(--oro);transform:translateY(-2px)}
+.redes svg{width:19px;height:19px;stroke:var(--oro);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pie-col h4{font-family:var(--display);font-weight:800;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);margin-bottom:1.2rem}
+.pie-col li+li{margin-top:.65rem}
+.pie-col a,.pie-col span{font-size:.9rem;color:var(--tx2-oscuro);transition:color .25s var(--ease)}
+.pie-col a:hover{color:var(--oro)}
+.pie-fin{
+  border-top:1px solid rgba(248,246,241,.09);padding:1.5rem 0;
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;
+  font-size:.8rem;color:var(--tx2-oscuro);
+}
+.pie-fin a{color:var(--oro-claro);font-weight:600;transition:color .25s var(--ease)}
+.pie-fin a:hover{color:var(--oro)}
+
+/* --- Flotantes --- */
+.wa{
+  position:fixed;right:20px;bottom:20px;z-index:55;width:60px;height:60px;
+  border-radius:50%;background:#25D366;display:grid;place-items:center;
+  box-shadow:0 8px 26px rgba(37,211,102,.4);
+  animation:entrar .55s var(--ease) .9s both;
+}
+.wa svg{width:32px;height:32px;fill:#fff;position:relative;z-index:2}
+.wa::before{
+  content:'';position:absolute;inset:0;border-radius:50%;background:#25D366;
+  animation:onda 2.4s ease-out infinite;
+}
+@keyframes onda{0%{transform:scale(1);opacity:.65}100%{transform:scale(1.85);opacity:0}}
+@keyframes entrar{from{opacity:0;transform:scale(.4) translateY(14px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.arriba{
+  position:fixed;right:20px;bottom:96px;z-index:55;width:46px;height:46px;
+  border-radius:50%;background:var(--carbon);border:1px solid var(--borde);
+  display:grid;place-items:center;cursor:pointer;
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s,background .25s var(--ease),border-color .25s var(--ease);
+}
+.arriba.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.arriba:hover{background:rgba(233,184,36,.14);border-color:var(--oro)}
+.arriba svg{width:19px;height:19px;stroke:var(--oro);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.gestix{
+  position:fixed;left:20px;bottom:20px;z-index:55;
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.6rem 1.05rem;border-radius:var(--r-pill);
+  background:linear-gradient(135deg,#C9971A,#E9B824);color:#fff;
+  font-size:.74rem;font-weight:600;letter-spacing:.01em;
+  box-shadow:0 6px 20px rgba(201,151,26,.32);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+.gestix:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(201,151,26,.45)}
+.gestix svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+@media (max-width:620px){
+  .gestix{padding:.48rem .8rem;font-size:.66rem;left:12px;bottom:14px}
+  .wa{right:14px;bottom:14px;width:54px;height:54px}
+  .wa svg{width:28px;height:28px}
+  .arriba{right:14px;bottom:82px;width:42px;height:42px}
+}
+
+/* ---------- Revelado al hacer scroll ---------- */
+.rev{opacity:0;transform:translateY(26px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.rev.visto{opacity:1;transform:none}
+
+/* ---------- Colapso responsive ---------- */
+@media (max-width:980px){
+  .hero-rejilla{grid-template-columns:1fr;gap:2.6rem}
+  .hero-visual{max-width:390px;order:-1}
+  .hero .lead{max-width:100%}
+  .duo,.instructor,.horarios,.afiliacion,.contacto{grid-template-columns:1fr}
+  .instructor-txt,.afiliacion-txt{order:2}
+  .retrato{max-width:300px}
+  .sello-fed{width:200px;height:200px}
+  .valores{flex-direction:column;align-items:flex-start}
+  .valores .btn{width:100%}
+}
+@media (max-width:760px){
+  .pie-grid{grid-template-columns:1fr;gap:2.3rem}
+  .hitos{grid-template-columns:1fr;gap:.9rem}
+  .hitos div{border-top:none;border-left:2px solid var(--oro-prof);padding:0 0 0 1rem}
+  .pie-fin{flex-direction:column;text-align:center;align-items:center}
+}
+
+/* ---------- Movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .rev{opacity:1;transform:none}
+  .sello-fed .arco{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div class="grano" aria-hidden="true"></div>
+
+<!-- ===================== NAVEGACIÓN ===================== -->
+<header class="nav" id="nav">
+  <div class="env">
+    <a href="#inicio" class="marca" aria-label="International Cornejo Kenpo Studio, ir al inicio">
+      <img src="img/insignia-cornejo.webp" alt="Insignia de International Cornejo Kenpo Studio" width="44" height="44">
+      <span>International Cornejo<br><b>Kenpo Studio</b></span>
+    </a>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="#kenpo">Kenpo</a>
+      <a href="#cinturones">Grados</a>
+      <a href="#instructor">Instructor</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn btn-oro">Clase de prueba</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="panel">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="panel" id="panel">
+  <a href="#kenpo">Kenpo</a>
+  <a href="#beneficios">Beneficios</a>
+  <a href="#cinturones">Grados</a>
+  <a href="#instructor">Instructor</a>
+  <a href="#horarios">Horarios</a>
+  <a href="#preguntas">Preguntas</a>
+  <a href="#blog">Blog</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#contacto" class="btn btn-oro">Agenda tu clase de prueba</a>
+</div>
+
+<main id="inicio">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="env">
+    <div class="hero-rejilla">
+      <div>
+        <p class="rotulo">Maipú, Santiago</p>
+        <h1 class="t-xxl">Entrena con disciplina.<br><span class="oro">Avanza con confianza.</span></h1>
+        <p class="lead">Kenpo Karate para todas las edades en Maipú. Técnica, defensa personal y respeto, con el respaldo de KenpoChile.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn btn-oro">Agenda tu clase de prueba</a>
+          <a href="#horarios" class="btn btn-linea">Ver horarios</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="marco-foto">
+          <img src="img/foto-05.jpg" alt="Instructores de International Cornejo Kenpo Studio en posición de guardia durante una clase de Kenpo Karate" width="800" height="1000" fetchpriority="high" decoding="async">
+        </div>
+        <div class="sello">
+          <img src="img/insignia-cornejo.webp" alt="Insignia de la escuela: cabeza de tigre en trazo blanco sobre círculo negro con letras doradas" width="148" height="148">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CREDENCIALES (bajo el hero) ===================== -->
+<section class="credenciales" aria-label="Credenciales de la escuela">
+  <div class="env">
+    <ul>
+      <li><b>CKF</b><small>Federación internacional</small></li>
+      <li><b>1994</b><small>Daniel Cornejo entrena Kenpo desde</small></li>
+      <li><b>12</b><small>Grados en el programa técnico</small></li>
+      <li><b>Maipú</b><small>Nuestra sede de entrenamiento</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== QUÉ ES KENPO ===================== -->
+<section class="s-negra" id="kenpo">
+  <img class="agua" src="img/insignia-cornejo.webp" alt="" aria-hidden="true" style="top:8%;right:-16%" loading="lazy">
+  <div class="env">
+    <div class="duo">
+      <div class="duo-txt rev">
+        <h2 class="t-xl">Qué es el <span class="oro">Kenpo Karate</span></h2>
+        <div class="filete" style="margin-bottom:1.9rem"></div>
+        <p class="lead">El Kenpo es un arte marcial orientado a la defensa personal. Trabaja respuestas rápidas y combinaciones fluidas de manos y piernas, pensadas para situaciones reales y para personas de cualquier contextura física.</p>
+        <p class="lead" style="margin-top:1.1rem">En la escuela lo entrenamos como un sistema completo: técnica, acondicionamiento, control del cuerpo y, sobre todo, la actitud con la que se entra y se sale del dojo.</p>
+        <ul class="notas">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Técnicas de respuesta rápida ante agarres, empujones y golpes.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Formas y sets que construyen coordinación, equilibrio y memoria corporal.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Un programa de doce grados bajo el sistema American Kenpo de Ed Parker.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+            <span>Prevención primero: la mejor defensa es evitar el conflicto cuando se puede.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="marco-oro rev">
+        <img src="img/header-1.jpg" alt="Práctica de Kenpo Karate al aire libre, dos practicantes en posición de guardia" loading="lazy" decoding="async" width="900" height="720" style="object-position:center 5%">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BENEFICIOS (bento) ===================== -->
+<section class="s-cafe" id="beneficios">
+  <div class="env">
+    <div class="cabecera rev">
+      <h2 class="t-xl">Lo que te llevas de <span class="oro">cada clase</span></h2>
+      <div class="filete"></div>
+      <p class="lead">Se entrena el cuerpo, pero lo que más cambia es la cabeza. Estos son los efectos que muchos alumnos notan con la práctica constante.</p>
+    </div>
+    <div class="bento">
+
+      <article class="celda c-a rev">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3.4v5.3c0 4.4-3.1 8.5-7.5 9.8-4.4-1.3-7.5-5.4-7.5-9.8V6.4z"/><path d="M9.3 12.2l1.9 1.9 3.6-3.8"/></svg>
+        <h3 class="t-m">Confianza y seguridad</h3>
+        <p>Saber que puedes reaccionar cambia la forma en que caminas por la calle.</p>
+      </article>
+
+      <article class="celda c-b rev">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 12.6l4.2-4.2a2 2 0 012.8 0l6.8 6.8"/><path d="M14.4 5.4l4.2 4.2"/><circle cx="18.5" cy="18.5" r="2.4"/></svg>
+        <h3 class="t-m">Defensa personal</h3>
+        <p>Técnicas prácticas, entrenadas con control y guiadas por el instructor.</p>
+      </article>
+
+      <article class="celda c-c c-grad rev">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 9v6M17.5 9v6M3 10.5v3M21 10.5v3M6.5 12h11"/></svg>
+        <h3 class="t-m">Condición física</h3>
+        <p>Resistencia, fuerza, flexibilidad y coordinación, sin contar repeticiones.</p>
+      </article>
+
+      <article class="celda c-d rev">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a4.2 4.2 0 00-4.2 4.2c-1.6.5-2.7 2-2.7 3.8 0 1.2.5 2.2 1.3 3-.3.6-.5 1.2-.5 1.9A4 4 0 009.9 20.4a3.2 3.2 0 002.1.8 3.2 3.2 0 002.1-.8A4 4 0 0018.1 16.4c0-.7-.2-1.3-.5-1.9.8-.8 1.3-1.8 1.3-3 0-1.8-1.1-3.3-2.7-3.8A4.2 4.2 0 0012 3.5z"/><path d="M12 7.7v13.5"/></svg>
+        <h3 class="t-m">Disciplina y concentración</h3>
+        <p>Llegar, saludar, repetir y corregir. La rutina del dojo ordena el resto de la semana, y es el motivo por el que muchos apoderados inscriben a sus hijos.</p>
+      </article>
+
+      <article class="celda c-e rev">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.1"/><path d="M3.4 19.5a5.8 5.8 0 0111.2 0"/><circle cx="17.3" cy="9.6" r="2.4"/><path d="M15.6 15.4a4.6 4.6 0 015.1 3.4"/></svg>
+        <h3 class="t-m">Respeto y comunidad</h3>
+        <p>Se entrena acompañado. Los alumnos más antiguos corrigen a los nuevos y el saludo abre y cierra cada clase.</p>
+      </article>
+
+      <article class="celda c-foto rev">
+        <div class="c-cuerpo">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.2"/><path d="M8.4 13.4L6.6 21l5.4-2.7 5.4 2.7-1.8-7.6"/></svg>
+          <h3 class="t-m">Metas claras con los grados</h3>
+          <p>Cada examen de grado es una meta concreta y medible. No es motivación abstracta: es un cinturón que refleja el trabajo de varios meses, rendido frente a tus compañeros y evaluado bajo el sistema de la federación.</p>
+        </div>
+        <figure>
+          <img src="img/foto-04.jpg" alt="Entrega de certificados y cinturones a alumnos de la escuela tras un examen de grado" loading="lazy" decoding="async" width="900" height="600">
+        </figure>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CAMINO DEL CINTURÓN ===================== -->
+<section class="s-negra" id="cinturones">
+  <img class="agua" src="img/insignia-cornejo.webp" alt="" aria-hidden="true" style="bottom:-12%;left:-18%" loading="lazy">
+  <div class="env">
+    <div class="cabecera rev">
+      <p class="rotulo">Programa técnico CKF</p>
+      <h2 class="t-xl">De <span class="oro">blanco a negro</span>, un grado a la vez</h2>
+      <div class="filete"></div>
+      <p class="lead">Todos parten como cinturón blanco. Se avanza rindiendo exámenes de grado bajo el sistema American Kenpo que usa la federación. Desliza para recorrer el camino completo.</p>
+    </div>
+  </div>
+  <div class="env" style="padding-inline:0">
+    <div class="carril" role="list" aria-label="Progresión de cinturones del programa técnico">
+      <article class="grado rev" role="listitem" style="--tela:#F8F6F1">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">Inicio</span>
+        <h3>Cinturón Blanco</h3>
+        <p>El punto de partida. Nadie llega sabiendo.</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#E9C43A">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">VIII Grado</span>
+        <h3>Cinturón Amarillo</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>3 a 5 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#D9782E">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">VII Grado</span>
+        <h3>Cinturón Naranjo</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>3 a 5 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#7A4E9C">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">VI Grado</span>
+        <h3>Cinturón Púrpura</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>3 a 5 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#2F5FA8">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">V Grado</span>
+        <h3>Cinturón Azul</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>3 a 5 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#3E8E4E">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">IV Grado</span>
+        <h3>Cinturón Verde</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>6 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#6B4428">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">III Grado</span>
+        <h3>Café 3er Grado</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>6 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#6B4428">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">II Grado</span>
+        <h3>Café 2do Grado</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>6 meses</p>
+      </article>
+      <article class="grado rev" role="listitem" style="--tela:#6B4428">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">I Grado</span>
+        <h3>Café 1er Grado</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>6 meses</p>
+      </article>
+      <article class="grado es-negro rev" role="listitem" style="--tela:#0E0D0C">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">I Dan</span>
+        <h3>Negro, Junior Instructor</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>1 año</p>
+      </article>
+      <article class="grado es-negro rev" role="listitem" style="--tela:#0E0D0C">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">II Dan</span>
+        <h3>Negro, Associate Instructor</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>2 años</p>
+      </article>
+      <article class="grado es-negro rev" role="listitem" style="--tela:#0E0D0C">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">III Dan</span>
+        <h3>Negro, Head Instructor</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>3 años</p>
+      </article>
+      <article class="grado es-negro rev" role="listitem" style="--tela:#0E0D0C">
+        <span class="nudo" aria-hidden="true"></span>
+        <span class="orden">IV Dan</span>
+        <h3>Negro, Senior Instructor</h3>
+        <p class="pista"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke-linecap="round"><circle cx="12" cy="12" r="8.4"/><path d="M12 7.6V12l2.8 1.8"/></svg>4 años</p>
+      </article>
+    </div>
+  </div>
+  <div class="env">
+    <p style="color:var(--tx2-oscuro);font-size:.88rem;max-width:70ch">Los tiempos corresponden al programa técnico de la federación y son referenciales: cada alumno rinde cuando su instructor lo considera preparado.</p>
+  </div>
+</section>
+
+<!-- ===================== EL INSTRUCTOR ===================== -->
+<section class="s-cafe" id="instructor">
+  <div class="env">
+    <div class="instructor">
+      <div class="retrato rev">
+        <span class="anillo" aria-hidden="true"></span>
+        <figure>
+          <img src="img/header-1.jpg" alt="El instructor Daniel Cornejo en posición de guardia de Kenpo Karate" loading="lazy" decoding="async" width="600" height="600">
+        </figure>
+      </div>
+      <div class="instructor-txt rev">
+        <span class="credencial">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="9" r="5.2"/><path d="M8.4 13.4L6.6 21l5.4-2.7 5.4 2.7-1.8-7.6"/></svg>
+          Black Belt, Probationary Black Belt
+        </span>
+        <h2 class="t-xl">Instructor <span class="oro">Daniel Cornejo</span></h2>
+        <div class="filete" style="margin-bottom:1.9rem"></div>
+        <p>Daniel Cornejo es alumno directo del maestro Roberto Vidal desde 1994 y obtuvo su grado de Black Belt en 2016. En 1999 ingresó al Centro Deportivo de Alto Rendimiento CAM.</p>
+        <p>Como miembro oficial de la federación CKF ha participado en distintos seminarios nacionales. Hoy dirige su propia escuela en Maipú, donde hace clases a alumnos de distintas edades, entre ellos su hija, que ya obtuvo el grado de cinturón amarillo.</p>
+        <p>Es también uno de los organizadores del torneo <em>Hermandad Marcial</em>, el encuentro que reúne a varias escuelas de la federación.</p>
+        <div class="hitos">
+          <div><b>1994</b><small>Entrenando Kenpo con el maestro Roberto Vidal</small></div>
+          <div><b>2016</b><small>Obtiene el grado de Black Belt</small></div>
+          <div><b>CKF</b><small>Miembro oficial de la Chinese Karate Federation</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CÓMO EMPEZAR ===================== -->
+<section class="s-negra" id="empezar">
+  <div class="env">
+    <div class="cabecera rev" style="max-width:52ch">
+      <h2 class="t-xl">Empezar es <span class="oro">más simple</span> de lo que crees</h2>
+      <div class="filete"></div>
+      <p class="lead">No necesitas experiencia previa, ni estar en forma, ni tener uniforme. Solo ganas de probar.</p>
+    </div>
+    <div class="pasos">
+      <div class="paso rev">
+        <span class="num">1</span>
+        <div>
+          <h3>Escríbenos</h3>
+          <p>Un mensaje por WhatsApp con tu nombre y la edad del alumno es suficiente.</p>
+        </div>
+      </div>
+      <div class="paso rev">
+        <span class="num">2</span>
+        <div>
+          <h3>Coordinamos el día</h3>
+          <p>Te confirmamos horario y sede según el grupo que mejor te acomode.</p>
+        </div>
+      </div>
+      <div class="paso rev">
+        <span class="num">3</span>
+        <div>
+          <h3>Vives tu primera clase</h3>
+          <p>Llegas con ropa deportiva y agua. El instructor te acompaña durante toda la sesión.</p>
+        </div>
+      </div>
+      <div class="paso rev">
+        <span class="num">4</span>
+        <div>
+          <h3>Comienzas tu camino</h3>
+          <p>Si te gustó, te inscribes y partes como cinturón blanco.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="valores rev">
+      <div>
+        <h3 class="t-l">Qué llevar a tu primera clase</h3>
+        <p>Ropa deportiva cómoda, una botella de agua y llegar unos minutos antes para presentarte. Si tienes alguna lesión o condición de salud, avísale al instructor al comienzo de la clase.</p>
+      </div>
+      <a href="#contacto" class="btn btn-oro">Agenda tu clase de prueba</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HORARIOS Y UBICACIÓN (bloque claro) ===================== -->
+<section class="s-clara claro" id="horarios">
+  <div class="env">
+    <div class="cabecera rev" style="max-width:54ch">
+      <h2 class="t-xl">Horarios y <span style="color:#A67800">dónde entrenamos</span></h2>
+      <div class="filete"></div>
+      <p class="lead">Nuestra sede en Maipú. Las clases son mixtas por edad: niños, jóvenes y adultos entrenan en la misma sesión, cada uno a su nivel.</p>
+    </div>
+
+    <div class="horarios">
+      <div class="rev">
+        <article class="sede">
+          <header>
+            <span class="punto" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </span>
+            <div>
+              <h3>Junta de Vecinos Independencia de Chile N° 16</h3>
+              <p>Av. Padre Alberto Hurtado 1709, Maipú</p>
+            </div>
+          </header>
+          <table class="tabla">
+            <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Horario de la sede Av. Padre Alberto Hurtado</caption>
+            <thead><tr><th scope="col">Días</th><th scope="col">Grupo</th><th scope="col" style="text-align:right">Horario</th></tr></thead>
+            <tbody>
+              <tr><td>Martes y jueves</td><td>Todas las edades</td><td class="hora">17:30 a 20:30</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+
+      <div class="rev">
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps?q=Av.%20Padre%20Alberto%20Hurtado%201709,%20Maip%C3%BA,%20Chile&output=embed"
+            title="Mapa de la sede en Av. Padre Alberto Hurtado 1709, Maipú"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="dato">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <p><strong>Sede</strong>Av. Padre Alberto Hurtado 1709, Maipú, Región Metropolitana</p>
+          </div>
+          <div class="dato">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 4.5h4l1.6 4-2.3 1.5a12 12 0 005.5 5.5l1.5-2.3 4 1.6v4a1.4 1.4 0 01-1.6 1.4A16.6 16.6 0 014 6.1 1.4 1.4 0 015.2 4.5z"/></svg>
+            <p><strong>WhatsApp</strong><a href="#contacto" style="color:#8A6400;font-weight:600">+56 9 8653 4872</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="valores rev">
+      <div>
+        <h3 class="t-l" style="color:var(--blanco)">Valores y planes</h3>
+        <p>Los valores de matrícula y mensualidad se entregan directamente por WhatsApp, según el grupo y la sede. Escríbenos y te respondemos con el detalle.</p>
+      </div>
+      <a href="#contacto" class="btn btn-oro">Consulta valores por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PREGUNTAS FRECUENTES ===================== -->
+<section class="s-clara claro" id="preguntas" style="padding-top:0">
+  <div class="env">
+    <div class="faq">
+      <div class="cabecera rev" style="text-align:center;margin-inline:auto">
+        <h2 class="t-xl">Preguntas <span style="color:#A67800">frecuentes</span></h2>
+        <div class="filete" style="margin-inline:auto"></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿Necesito experiencia previa para empezar?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>No. Todos los alumnos parten como cinturón blanco, sin excepción. El programa está diseñado para que alguien que nunca ha hecho artes marciales pueda seguir la clase desde el primer día, y es normal sentirse descoordinado al principio.</p>
+        </div></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿Desde qué edad pueden entrenar los niños?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>Las clases son para todas las edades y en la escuela entrenan niños, jóvenes y adultos.</p>
+        </div></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿Qué ropa necesito para la primera clase?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>Ropa deportiva cómoda que te permita moverte con libertad, y una botella de agua. No necesitas comprar uniforme para probar.</p>
+        </div></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿Cómo funcionan los exámenes de grado?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>El avance por cinturones sigue el programa técnico de la federación CKF, basado en el sistema American Kenpo de Ed Parker. Cada grado tiene sus técnicas, sus sets y formas, y su teoría.</p>
+          <p>El alumno rinde examen cuando el instructor lo considera preparado. Los tiempos del programa son referenciales, no plazos garantizados.</p>
+        </div></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿La escuela está respaldada por alguna federación?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>Sí. International Cornejo Kenpo Studio forma parte de la red de escuelas de KenpoChile, dirigida por el maestro Roberto Vidal, y de la federación internacional Chinese Karate Federation. Eso significa un sistema de grados común y certificados reconocidos entre todas las escuelas de la red.</p>
+        </div></div>
+      </div>
+
+      <div class="item rev">
+        <button type="button" aria-expanded="false">
+          <span>¿Cuánto cuesta entrenar?</span><span class="cruz" aria-hidden="true"></span>
+        </button>
+        <div class="resp"><div>
+          <p>Los valores de matrícula y mensualidad se informan directamente por WhatsApp, según la sede y el grupo. Escríbenos y te enviamos el detalle actualizado.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AFILIACIÓN KENPOCHILE ===================== -->
+<section class="s-cafe" id="federacion">
+  <div class="env">
+    <div class="afiliacion">
+      <div class="sello-fed rev" aria-hidden="true">
+        <svg class="arco" viewBox="0 0 230 230">
+          <defs><path id="arco-sup" d="M 25,115 A 90,90 0 0 1 205,115"/>
+                 <path id="arco-inf" d="M 205,115 A 90,90 0 0 1 25,115"/></defs>
+          <text><textPath href="#arco-sup" startOffset="50%" text-anchor="middle">Escuela afiliada</textPath></text>
+          <text dy="12"><textPath href="#arco-inf" startOffset="50%" text-anchor="middle">Chinese Karate Federation</textPath></text>
+        </svg>
+        <div class="centro">
+          <strong>Kenpo<br>Chile</strong>
+          <small>Red de escuelas</small>
+        </div>
+      </div>
+      <div class="afiliacion-txt rev">
+        <h2 class="t-xl">Escuela afiliada a <span class="oro">KenpoChile</span></h2>
+        <div class="filete" style="margin-bottom:1.9rem"></div>
+        <p>International Cornejo Kenpo Studio forma parte de la red de escuelas de KenpoChile, dirigida por el maestro Roberto Vidal, 8th Degree Black Belt, Associate Master of the Arts.</p>
+        <p>Esto significa que el alumno no entrena aislado: aprende bajo el mismo programa técnico y el mismo sistema de grados que el resto de las escuelas de la federación en Chile, y sus certificados son reconocidos dentro de toda la red.</p>
+        <p>También significa seminarios, clases especiales y torneos compartidos entre escuelas, como el <em>Hermandad Marcial</em> que la escuela coorganiza.</p>
+        <a href="https://kenpochile.cl/" target="_blank" rel="noopener" class="btn btn-linea">
+          Visitar kenpochile.cl
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERÍA ===================== -->
+<section class="s-negra" id="galeria">
+  <div class="env">
+    <div class="cabecera rev" style="max-width:50ch">
+      <h2 class="t-xl">La escuela <span class="oro">por dentro</span></h2>
+      <div class="filete"></div>
+      <p class="lead">Exámenes de grado, entregas de certificados y clases compartidas con otras escuelas de la federación.</p>
+    </div>
+  </div>
+  <div class="env" style="padding-inline:0">
+    <div class="galeria rev">
+      <figure><img src="img/foto-10.jpg" alt="Grupo de alumnos de la escuela con sus medallas tras un examen de grado" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/foto-01.jpg" alt="Alumnos recibiendo sus certificados de grado junto a los instructores" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/foto-11.jpg" alt="Entrega de certificado a un alumno junto a los instructores de la federación" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/foto-02.jpg" alt="Dos alumnas con cinturón verde y negro junto a su instructor" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/foto-08.jpg" alt="Alumna recibiendo su certificado de grado acompañada por cuatro instructores" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/foto-05.jpg" alt="Tres instructores de Kenpo Karate en posición de guardia" loading="lazy" decoding="async" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG ===================== -->
+<section class="s-cafe" id="blog">
+  <div class="env">
+    <div class="cabecera rev" style="max-width:52ch">
+      <p class="rotulo">Artículos</p>
+      <h2 class="t-xl">Antes de tu <span class="oro">primera clase</span></h2>
+      <div class="filete"></div>
+      <p class="lead">Las dudas que más frenan a quien quiere empezar, respondidas con calma.</p>
+    </div>
+    <div class="notas-grid" id="notasGrid"></div>
+    <div class="blog-pie rev">
+      <button type="button" class="btn btn-linea" id="verTodos">Ver todos los artículos</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="cierre-cta">
+  <img class="agua" src="img/insignia-cornejo.webp" alt="" aria-hidden="true" style="top:50%;left:50%;transform:translate(-50%,-50%);opacity:.035" loading="lazy">
+  <div class="env">
+    <h2 class="t-xxl">Tu primer cinturón comienza con <span class="oro">una clase</span></h2>
+    <p>No hay que estar listo para empezar. Hay que empezar para estar listo.</p>
+    <div class="hero-ctas">
+      <a href="#contacto" class="btn btn-oro">Agenda tu clase de prueba</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="s-negra" id="contacto" style="background:var(--carbon)">
+  <div class="env">
+    <div class="contacto">
+      <div class="rev">
+        <h2 class="t-xl">Escríbenos y <span class="oro">coordinamos</span></h2>
+        <div class="filete" style="margin-bottom:1.9rem"></div>
+        <p class="lead" style="margin-bottom:2rem">Completa el formulario y se abrirá WhatsApp con tu mensaje listo para enviar. También puedes escribirnos directamente.</p>
+        <div class="contacto-datos">
+          <a class="enlace-dato" id="waDirecto" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 4.5h4l1.6 4-2.3 1.5a12 12 0 005.5 5.5l1.5-2.3 4 1.6v4a1.4 1.4 0 01-1.6 1.4A16.6 16.6 0 014 6.1 1.4 1.4 0 015.2 4.5z"/></svg>
+            <span><b>WhatsApp</b>+56 9 8653 4872</span>
+          </a>
+          <a class="enlace-dato" href="https://www.instagram.com/danielcornejocornejo/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.1" cy="6.9" r=".9" fill="currentColor" stroke="none"/></svg>
+            <span><b>Instagram</b>@danielcornejocornejo</span>
+          </a>
+          <a class="enlace-dato" href="https://www.facebook.com/daniel.cornejocornejo.1" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.6 21v-7.6h2.6l.4-3h-3V8.5c0-.9.25-1.5 1.5-1.5h1.6V4.3A21 21 0 0015.3 4c-2.3 0-3.9 1.4-3.9 4.1v2.3H8.8v3h2.6V21z"/></svg>
+            <span><b>Facebook</b>Daniel Cornejo</span>
+          </a>
+          <a class="enlace-dato" href="https://www.google.com/maps/search/?api=1&query=Av.+Padre+Alberto+Hurtado+1709,+Maip%C3%BA,+Chile" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            <span><b>Sede principal</b>Av. Padre Alberto Hurtado 1709, Maipú</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="form rev" id="form" novalidate>
+        <div class="campo">
+          <label for="f-nombre">Nombre del alumno</label>
+          <input type="text" id="f-nombre" name="nombre" placeholder="Nombre y apellido" autocomplete="name" required>
+          <p class="error" id="e-nombre">Escribe el nombre del alumno.</p>
+        </div>
+        <div class="campo">
+          <label for="f-edad">Edad del alumno</label>
+          <input type="number" id="f-edad" name="edad" min="3" max="99" placeholder="Por ejemplo, 9" required>
+          <p class="error" id="e-edad">Indica una edad entre 3 y 99 años.</p>
+        </div>
+        <div class="campo">
+          <label for="f-programa">Grupo de interés</label>
+          <select id="f-programa" name="programa" required>
+            <option value="">Selecciona una opción</option>
+            <option>Kenpo infantil</option>
+            <option>Kenpo juvenil</option>
+            <option>Kenpo adultos</option>
+            <option>Todavía no lo tengo claro</option>
+          </select>
+          <p class="error" id="e-programa">Selecciona un grupo.</p>
+        </div>
+        <div class="campo">
+          <label for="f-fono">Teléfono o WhatsApp</label>
+          <input type="tel" id="f-fono" name="fono" placeholder="+56 9 1234 5678" autocomplete="tel" required>
+          <p class="ayuda">Lo usamos solo para confirmarte el día y la hora.</p>
+          <p class="error" id="e-fono">Escribe un teléfono válido de al menos 8 dígitos.</p>
+        </div>
+        <button type="submit" class="btn btn-oro btn-bloque">Agenda tu clase de prueba</button>
+        <p class="aviso">Al enviar se abre WhatsApp con el mensaje escrito. Nada se guarda en este sitio.</p>
+        <p class="estado" id="estado" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="env">
+    <div class="pie-grid">
+      <div>
+        <div class="pie-marca">
+          <img src="img/insignia-cornejo.webp" alt="Insignia de International Cornejo Kenpo Studio" width="62" height="62" loading="lazy">
+          <div>
+            <strong>International Cornejo<br>Kenpo Studio</strong>
+            <em>Maipú, Chile</em>
+          </div>
+        </div>
+        <p class="desc">Escuela de Kenpo Karate para niños, jóvenes y adultos, dirigida por el instructor Daniel Cornejo. Escuela afiliada a <a href="https://kenpochile.cl/" target="_blank" rel="noopener" style="color:var(--oro)">KenpoChile</a>.</p>
+        <div class="redes">
+          <a href="https://www.instagram.com/danielcornejocornejo/" target="_blank" rel="noopener" aria-label="Instagram de la escuela">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.4" y="3.4" width="17.2" height="17.2" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.1" cy="6.9" r=".9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.facebook.com/daniel.cornejocornejo.1" target="_blank" rel="noopener" aria-label="Facebook de la escuela">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.6 21v-7.6h2.6l.4-3h-3V8.5c0-.9.25-1.5 1.5-1.5h1.6V4.3A21 21 0 0015.3 4c-2.3 0-3.9 1.4-3.9 4.1v2.3H8.8v3h2.6V21z"/></svg>
+          </a>
+          <a id="waPie" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 4.5h4l1.6 4-2.3 1.5a12 12 0 005.5 5.5l1.5-2.3 4 1.6v4a1.4 1.4 0 01-1.6 1.4A16.6 16.6 0 014 6.1 1.4 1.4 0 015.2 4.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="pie-col">
+        <h4>La escuela</h4>
+        <ul>
+          <li><a href="#kenpo">Qué es el Kenpo</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#cinturones">Sistema de grados</a></li>
+          <li><a href="#instructor">El instructor</a></li>
+          <li><a href="#federacion">Afiliación</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="pie-col">
+        <h4>Entrenamos en</h4>
+        <ul>
+          <li><span>Av. Padre Alberto Hurtado 1709, Maipú<br>Martes y jueves, 17:30 a 20:30</span></li>
+          <li><a href="#contacto">+56 9 8653 4872</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie-fin">
+      <span>&copy; <span id="anio"></span> International Cornejo Kenpo Studio. Todos los derechos reservados.</span>
+      <span>Hecho con 💛 en Santiago, Chile · Desarrollado por <a href="https://gestixpro.cl/" target="_blank" rel="noopener">GestixPro</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== LECTOR DE ARTÍCULOS ===================== -->
+<div class="lector" id="lector" role="dialog" aria-modal="true" aria-label="Artículo del blog">
+  <div class="lector-barra">
+    <a href="#inicio" class="marca">
+      <img src="img/insignia-cornejo.webp" alt="" aria-hidden="true" width="36" height="36" style="width:36px;height:36px">
+      <span>International Cornejo<br><b>Kenpo Studio</b></span>
+    </a>
+    <button type="button" class="cerrar" id="cerrarLector">Cerrar</button>
+  </div>
+  <div id="lectorContenido"></div>
+</div>
+
+<!-- ===================== FLOTANTES ===================== -->
+<a class="wa" id="waFlotante" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp para agendar una clase de prueba">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.67-.5-.17 0-.37-.03-.57-.03-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.47s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.5.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.4.25-.7.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35M12 2a10 10 0 00-8.6 15.1L2 22l5.05-1.32A10 10 0 1012 2"/></svg>
+</a>
+
+<button class="arriba" id="arriba" aria-label="Volver al inicio de la página">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<a class="gestix" href="https://gestixpro.cl/" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>
+  Desarrollado por GestixPro
+</a>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ========================================================
+     CONFIGURACIÓN - datos de contacto en un solo lugar
+     ======================================================== */
+  var WHATSAPP   = '56986534872';
+  var MSJ_BASE   = 'Hola, quiero agendar una clase de prueba en Cornejo Kenpo Studio';
+  var MSJ_VALORES= 'Hola, quiero consultar los valores y planes de Cornejo Kenpo Studio';
+
+  function waURL(texto){
+    return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texto);
+  }
+
+  ['waFlotante','waDirecto','waPie'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.href = waURL(MSJ_BASE);
+  });
+
+  /* ========================================================
+     AÑO DINÁMICO
+     ======================================================== */
+  document.getElementById('anio').textContent = new Date().getFullYear();
+
+  /* ========================================================
+     NAVEGACIÓN
+     ======================================================== */
+  var nav    = document.getElementById('nav');
+  var burger = document.getElementById('burger');
+  var panel  = document.getElementById('panel');
+  var arriba = document.getElementById('arriba');
+
+  function cerrarPanel(){
+    panel.classList.remove('abierto');
+    burger.setAttribute('aria-expanded','false');
+    burger.setAttribute('aria-label','Abrir menú');
+    document.body.classList.remove('sin-scroll');
+  }
+
+  burger.addEventListener('click', function(){
+    var abierto = panel.classList.toggle('abierto');
+    burger.setAttribute('aria-expanded', String(abierto));
+    burger.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+    document.body.classList.toggle('sin-scroll', abierto);
+  });
+
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', cerrarPanel);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key !== 'Escape') return;
+    if (panel.classList.contains('abierto')) cerrarPanel();
+    if (lector.classList.contains('abierto')) cerrarLector();
+  });
+
+  /* Centinela invisible en el tope: evita escuchar el evento scroll */
+  var centinela = document.createElement('div');
+  centinela.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none';
+  document.body.appendChild(centinela);
+
+  var faro = document.createElement('div');
+  faro.style.cssText = 'position:absolute;top:700px;left:0;width:1px;height:1px;pointer-events:none';
+  document.body.appendChild(faro);
+
+  new IntersectionObserver(function(entradas){
+    nav.classList.toggle('fija', !entradas[0].isIntersecting);
+  }, {rootMargin:'0px'}).observe(centinela);
+
+  new IntersectionObserver(function(entradas){
+    arriba.classList.toggle('visible', !entradas[0].isIntersecting);
+  }).observe(faro);
+
+  arriba.addEventListener('click', function(){
+    var suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({top:0, behavior: suave ? 'smooth' : 'auto'});
+  });
+
+  /* ========================================================
+     REVELADO AL ENTRAR EN PANTALLA
+     Motivo: jerarquía. Cada sección se presenta al llegar a ella.
+     ======================================================== */
+  var reducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveles  = document.querySelectorAll('.rev');
+
+  if (reducido) {
+    reveles.forEach(function(el){ el.classList.add('visto'); });
+  } else {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if (!en.isIntersecting) return;
+        en.target.classList.add('visto');
+        obs.unobserve(en.target);
+      });
+    }, {threshold:.14, rootMargin:'0px 0px -40px 0px'});
+
+    reveles.forEach(function(el, i){
+      el.style.transitionDelay = (i % 4) * 70 + 'ms';
+      obs.observe(el);
+    });
+  }
+
+  /* ========================================================
+     PREGUNTAS FRECUENTES
+     ======================================================== */
+  document.querySelectorAll('.item button').forEach(function(btn){
+    var resp = btn.nextElementSibling;
+    btn.addEventListener('click', function(){
+      var abierto = btn.getAttribute('aria-expanded') === 'true';
+
+      document.querySelectorAll('.item button').forEach(function(otro){
+        otro.setAttribute('aria-expanded','false');
+        otro.parentElement.removeAttribute('aria-expanded');
+        otro.nextElementSibling.style.maxHeight = null;
+      });
+
+      if (!abierto) {
+        btn.setAttribute('aria-expanded','true');
+        btn.parentElement.setAttribute('aria-expanded','true');
+        resp.style.maxHeight = resp.scrollHeight + 'px';
+      }
+    });
+  });
+
+  /* ========================================================
+     FORMULARIO - deriva a WhatsApp, sin backend
+     ======================================================== */
+  var form   = document.getElementById('form');
+  var estado = document.getElementById('estado');
+
+  function marcar(id, malo){
+    var campo = document.getElementById(id).closest('.campo');
+    campo.classList.toggle('mal', malo);
+    return !malo;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    var nombre   = document.getElementById('f-nombre').value.trim();
+    var edad     = document.getElementById('f-edad').value.trim();
+    var programa = document.getElementById('f-programa').value;
+    var fono     = document.getElementById('f-fono').value.trim();
+    var digitos  = fono.replace(/\D/g,'');
+    var edadNum  = parseInt(edad, 10);
+
+    var ok = true;
+    ok = marcar('f-nombre',   nombre.length < 2) && ok;
+    ok = marcar('f-edad',     !edad || isNaN(edadNum) || edadNum < 3 || edadNum > 99) && ok;
+    ok = marcar('f-programa', !programa) && ok;
+    ok = marcar('f-fono',     digitos.length < 8) && ok;
+
+    if (!ok) {
+      estado.classList.remove('visible');
+      form.querySelector('.campo.mal input, .campo.mal select').focus();
+      return;
+    }
+
+    var texto = MSJ_BASE + '.\n\n'
+              + 'Alumno: ' + nombre + '\n'
+              + 'Edad: ' + edadNum + ' años\n'
+              + 'Grupo de interés: ' + programa + '\n'
+              + 'Teléfono: ' + fono;
+
+    window.open(waURL(texto), '_blank', 'noopener');
+    estado.textContent = 'Listo. Se abrió WhatsApp con tu mensaje. Si no se abrió, escríbenos al +56 9 8653 4872.';
+    estado.classList.add('visible');
+    form.reset();
+  });
+
+  /* Limpia el estado de error en cuanto el usuario corrige */
+  form.querySelectorAll('input, select').forEach(function(el){
+    el.addEventListener('input', function(){
+      el.closest('.campo').classList.remove('mal');
+    });
+  });
+
+  /* Botón de valores: abre WhatsApp con el mensaje de consulta de precios */
+  document.querySelectorAll('a.btn').forEach(function(a){
+    if (a.textContent.trim().indexOf('Consulta valores') === 0) {
+      a.href = waURL(MSJ_VALORES);
+      a.target = '_blank';
+      a.rel = 'noopener';
+    }
+  });
+
+  /* ========================================================
+     BLOG
+     ======================================================== */
+  var ARTICULOS = [
+    {
+      slug: 'primera-clase-de-kenpo',
+      titulo: 'Tu primera clase de Kenpo: qué esperar y cómo prepararte',
+      fecha: '2025-03-04',
+      img: 'img/foto-05.jpg',
+      alt: 'Instructores de Kenpo Karate en posición de guardia durante una clase',
+      bajada: 'Cómo se estructura una clase, qué llevar y por qué es completamente normal sentirse perdido los primeros días.',
+      cta: 'Agenda tu clase de prueba',
+      cuerpo: [
+        ['p','La barrera más grande para empezar artes marciales casi nunca es física. Es no saber qué va a pasar cuando cruces la puerta. Así que vamos a sacar esa duda del camino.'],
+        ['h2','Cómo es una clase típica'],
+        ['p','Las clases siguen una estructura estable, y esa repetición es parte del método: saber qué viene libera la cabeza para concentrarse en lo que estás haciendo.'],
+        ['ul',[
+          'Saludo de apertura. Se entra al espacio de entrenamiento con un saludo formal. Marca el inicio y ordena al grupo.',
+          'Calentamiento. Movilidad, trote suave y ejercicios de activación. Se adapta al nivel del grupo.',
+          'Técnica. El instructor muestra el movimiento, lo descompone y corrige uno por uno.',
+          'Práctica. Se repite con un compañero, siempre con control y sin contacto fuerte.',
+          'Cierre. Vuelta a la calma, comentarios de la clase y saludo de salida.'
+        ]],
+        ['h2','No necesitas experiencia ni estar en forma'],
+        ['p','Todos los alumnos parten como cinturón blanco. No hay prueba de ingreso ni nivel mínimo de condición física. El trabajo se ajusta a lo que cada persona puede hacer hoy, y avanza desde ahí.'],
+        ['p','Si llevas años sin hacer deporte, lo vas a sentir. Eso es esperable y se pasa en unas pocas semanas.'],
+        ['h2','Qué llevar'],
+        ['ul',[
+          'Ropa deportiva cómoda que te permita moverte con libertad.',
+          'Una botella de agua.',
+          'Llegar unos minutos antes para presentarte con el instructor.',
+          'Avisar si tienes alguna lesión o condición de salud, por leve que parezca.'
+        ]],
+        ['h2','El respeto y el saludo no son adorno'],
+        ['p','El saludo al entrar y salir, pedir permiso para interrumpir, esperar el turno. Suena ceremonioso desde afuera, pero cumple una función concreta: en un espacio donde se practican técnicas de contacto, el protocolo es lo que mantiene a todos seguros.'],
+        ['h2','Vas a sentirte descoordinado, y está bien'],
+        ['p','La primera vez que intentas una combinación de manos y piernas al mismo tiempo, el cuerpo no responde. A nadie le sale. La técnica se construye con repetición, no con talento, y por eso el programa está dividido en grados: cada uno consolida lo anterior antes de sumar algo nuevo.']
+      ]
+    },
+    {
+      slug: 'beneficios-kenpo-ninos',
+      titulo: '5 beneficios del Kenpo para niños, más allá de aprender a defenderse',
+      fecha: '2025-04-22',
+      img: 'img/foto-04.jpg',
+      alt: 'Niños de la escuela recibiendo sus certificados tras un examen de grado',
+      bajada: 'Lo que los apoderados suelen notar primero no tiene que ver con pelear, sino con cómo el niño se para frente a las cosas.',
+      cta: 'Inscribe a tu hijo, agenda una clase de prueba',
+      cuerpo: [
+        ['p','Muchos papás y mamás llegan buscando que su hijo aprenda a defenderse. Se quedan por otras razones. Estos son los cambios que más se mencionan después de unos meses de práctica constante.'],
+        ['h2','1. Disciplina y respeto por las normas'],
+        ['p','El dojo tiene reglas claras, visibles y parejas para todos: se saluda, se espera el turno, se escucha al instructor. Un niño que entrena con constancia internaliza que las normas existen por una razón, no porque un adulto lo diga.'],
+        ['h2','2. Confianza y seguridad en sí mismos'],
+        ['p','La confianza aquí no viene de ganarle a alguien. Viene de lograr una técnica que la semana pasada no salía. Es un progreso que el niño puede ver y medir, y eso se nota fuera de la clase.'],
+        ['h2','3. Canalizar la energía de forma positiva'],
+        ['p','Las clases son físicamente exigentes dentro de una estructura. Para un niño con mucha energía, tener un lugar donde gastarla con reglas claras suele hacer una diferencia notoria en la casa y en el colegio.'],
+        ['h2','4. Coordinación, equilibrio y motricidad'],
+        ['p','El Kenpo trabaja combinaciones de manos y piernas, cambios de postura y desplazamientos. Es un entrenamiento motriz completo, y favorece el desarrollo de la coordinación en edades donde eso todavía se está formando.'],
+        ['h2','5. Metas concretas con los cinturones'],
+        ['p','El sistema de grados da algo que a los niños les cuesta encontrar: un objetivo claro, alcanzable y con un plazo razonable. Cada examen rendido es una meta cumplida, y el cinturón es la prueba visible de que el esfuerzo sirvió.'],
+        ['h2','Una nota honesta'],
+        ['p','Las artes marciales ayudan y favorecen el desarrollo de estas habilidades, pero no son una solución garantizada para ningún problema puntual. Si hay una situación compleja en el colegio o en casa, el Kenpo puede ser un apoyo valioso dentro de un acompañamiento más amplio, no un reemplazo de él.']
+      ]
+    },
+    {
+      slug: 'kenpo-defensa-personal',
+      titulo: 'Kenpo y defensa personal: por qué es una de las artes marciales más prácticas',
+      fecha: '2025-06-10',
+      img: 'img/header-1.jpg',
+      alt: 'Dos practicantes de Kenpo Karate en posición de guardia',
+      bajada: 'Respuestas rápidas, combinaciones fluidas y una idea central: la mejor defensa es la que evita el conflicto.',
+      cta: 'Quiero entrenar Kenpo',
+      cuerpo: [
+        ['p','Entre las artes marciales, el Kenpo tiene una reputación particular: la de ser directo. No está construido alrededor de la competencia deportiva ni de formas ceremoniales, sino de responder a situaciones concretas.'],
+        ['h2','Respuesta rápida y combinaciones fluidas'],
+        ['p','El Kenpo trabaja con secuencias cortas y encadenadas. En vez de buscar un golpe definitivo, encadena varios movimientos que fluyen uno del otro, usando manos y piernas, y aprovechando el desequilibrio que genera el movimiento anterior.'],
+        ['p','Cada técnica responde a un ataque específico: un agarre de muñeca, un empujón, un golpe frontal. Se entrenan por nombre y por situación, lo que hace que el aprendizaje sea concreto y medible.'],
+        ['h2','Defensa personal es confianza, no agresión'],
+        ['p','Hay una confusión frecuente. Aprender a defenderse no se trata de volverse más capaz de pelear, sino de estar menos expuesto a la parálisis. La mayoría de las personas, ante una situación de riesgo, no reacciona porque nunca ensayó una respuesta.'],
+        ['p','Entrenar hace que el cuerpo tenga una opción disponible. Eso cambia cómo te paras en el mundo, y curiosamente, suele hacer que necesites usarlo menos.'],
+        ['h2','Prevención primero'],
+        ['p','Cualquier instructor serio lo dirá antes que nada: la situación que no ocurre es la mejor resuelta. Leer el entorno, mantener distancia, retirarse cuando se puede. Eso se enseña con la misma seriedad que una técnica.'],
+        ['h2','Por qué la práctica guiada importa'],
+        ['p','Ver videos no construye reflejos. Una técnica mal ejecutada no solo no funciona: puede lesionarte. La corrección en el momento por parte de un instructor es lo que convierte un movimiento aprendido en un movimiento disponible bajo presión.'],
+        ['p','Y conviene decirlo con claridad: ninguna arte marcial garantiza que podrás resolver cualquier situación. Lo que entrega es preparación, criterio y confianza. Eso ya es bastante.']
+      ]
+    },
+    {
+      slug: 'significado-de-los-cinturones',
+      titulo: 'El significado de los cinturones: tu camino de blanco a negro',
+      fecha: '2025-08-18',
+      img: 'img/foto-01.jpg',
+      alt: 'Alumnos de la escuela recibiendo sus certificados de grado',
+      bajada: 'Qué representa realmente un cinturón, cómo funciona el avance por grados y por qué el negro es un comienzo.',
+      cta: 'Tu primer cinturón comienza con una clase',
+      cuerpo: [
+        ['p','El cinturón es el símbolo más reconocible de las artes marciales y también el peor entendido. No es un trofeo ni un rango social. Es un registro de trabajo.'],
+        ['h2','Qué representa un cinturón'],
+        ['p','Tres cosas, en este orden: conocimiento técnico, constancia en el entrenamiento y la actitud con la que se entrena. Un alumno con la técnica impecable pero que no aparece, o que no respeta a sus compañeros, no avanza.'],
+        ['h2','Cómo funciona el avance por grados'],
+        ['p','La escuela sigue el programa técnico de la federación CKF, basado en el sistema American Kenpo de Ed Parker. Son doce grados, desde cinturón amarillo hasta cuarto grado de cinturón negro, y cada uno define con precisión qué se debe dominar.'],
+        ['ul',[
+          'Un conjunto de técnicas propias del grado, cada una con su nombre y su situación.',
+          'Sets y formas, que son secuencias largas que integran lo aprendido.',
+          'Teoría, es decir, los conceptos y principios detrás de los movimientos.'
+        ]],
+        ['p','El alumno rinde examen cuando el instructor lo considera preparado. Los tiempos que aparecen en el programa son referenciales: marcan un orden de magnitud, no un calendario.'],
+        ['h2','Por qué el negro es un comienzo'],
+        ['p','Dentro del sistema, el primer grado de cinturón negro se llama Junior Instructor. El nombre lo dice todo: no cierra el aprendizaje, abre la etapa en que empiezas a transmitirlo. Después vienen el segundo, tercero y cuarto grado, donde el trabajo pasa a ser de profundización.'],
+        ['p','Visto así, el blanco y el negro no son los extremos de una línea. Son dos puntos de un camino bastante más largo.']
+      ]
+    }
+  ];
+
+  var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+  function fechaLarga(iso){
+    var p = iso.split('-');
+    return parseInt(p[2],10) + ' de ' + MESES[parseInt(p[1],10)-1] + ' de ' + p[0];
+  }
+
+  /* Construcción por DOM, sin innerHTML con datos variables */
+  function tarjeta(a){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'nota rev';
+    btn.setAttribute('aria-label','Leer el artículo: ' + a.titulo);
+
+    var caja = document.createElement('div');
+    caja.className = 'img';
+    var img = document.createElement('img');
+    img.src = a.img; img.alt = a.alt; img.loading = 'lazy'; img.decoding = 'async';
+    img.width = 640; img.height = 400;
+    if (a.img === 'img/header-1.jpg') img.style.objectPosition = 'center 7%';
+    caja.appendChild(img);
+
+    var cuerpo = document.createElement('div');
+    cuerpo.className = 'cuerpo';
+
+    var t = document.createElement('time');
+    t.dateTime = a.fecha; t.textContent = fechaLarga(a.fecha);
+
+    var h = document.createElement('h3'); h.textContent = a.titulo;
+    var p = document.createElement('p'); p.textContent = a.bajada;
+    var m = document.createElement('span'); m.className = 'mas'; m.textContent = 'Leer artículo';
+
+    cuerpo.appendChild(t); cuerpo.appendChild(h); cuerpo.appendChild(p); cuerpo.appendChild(m);
+    btn.appendChild(caja); btn.appendChild(cuerpo);
+
+    btn.addEventListener('click', function(){ abrirArticulo(a.slug); });
+    return btn;
+  }
+
+  var grid = document.getElementById('notasGrid');
+  ARTICULOS.slice(0,3).forEach(function(a){ grid.appendChild(tarjeta(a)); });
+
+  /* Los .rev creados por script también se observan */
+  if (!reducido) {
+    var obs2 = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(en){
+        if (!en.isIntersecting) return;
+        en.target.classList.add('visto');
+        obs2.unobserve(en.target);
+      });
+    }, {threshold:.14});
+    grid.querySelectorAll('.rev').forEach(function(el){ obs2.observe(el); });
+  } else {
+    grid.querySelectorAll('.rev').forEach(function(el){ el.classList.add('visto'); });
+  }
+
+  /* --- Lector --- */
+  var lector    = document.getElementById('lector');
+  var contenido = document.getElementById('lectorContenido');
+
+  function limpiar(){ while (contenido.firstChild) contenido.removeChild(contenido.firstChild); }
+
+  function abrirLector(){
+    lector.classList.add('abierto');
+    document.body.classList.add('sin-scroll');
+    lector.scrollTop = 0;
+    document.getElementById('cerrarLector').focus();
+  }
+
+  function cerrarLector(){
+    lector.classList.remove('abierto');
+    document.body.classList.remove('sin-scroll');
+    if (location.hash.indexOf('#articulo') === 0) {
+      history.replaceState(null, '', location.pathname + '#blog');
+    }
+  }
+
+  document.getElementById('cerrarLector').addEventListener('click', cerrarLector);
+
+  function botonCierre(texto){
+    var caja = document.createElement('div');
+    caja.className = 'cierre';
+    var p = document.createElement('p');
+    p.textContent = texto;
+    var a = document.createElement('a');
+    a.className = 'btn btn-oro';
+    a.href = waURL(MSJ_BASE);
+    a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = 'Agenda tu clase de prueba';
+    caja.appendChild(p); caja.appendChild(a);
+    return caja;
+  }
+
+  function abrirArticulo(slug){
+    var a = ARTICULOS.filter(function(x){ return x.slug === slug; })[0];
+    if (!a) return;
+
+    limpiar();
+
+    var art = document.createElement('article');
+
+    var portada = document.createElement('div');
+    portada.className = 'portada';
+    var img = document.createElement('img');
+    img.src = a.img; img.alt = a.alt; img.decoding = 'async';
+    if (a.img === 'img/header-1.jpg') img.style.objectPosition = 'center 7%';
+    portada.appendChild(img);
+
+    var t = document.createElement('time');
+    t.dateTime = a.fecha; t.textContent = fechaLarga(a.fecha);
+
+    var h1 = document.createElement('h1');
+    h1.className = 't-xl';
+    h1.textContent = a.titulo;
+
+    art.appendChild(portada); art.appendChild(t); art.appendChild(h1);
+
+    a.cuerpo.forEach(function(bloque){
+      if (bloque[0] === 'ul') {
+        var ul = document.createElement('ul');
+        bloque[1].forEach(function(txt){
+          var li = document.createElement('li');
+          var sp = document.createElement('span');
+          sp.textContent = txt;
+          li.appendChild(sp);
+          ul.appendChild(li);
+        });
+        art.appendChild(ul);
+      } else {
+        var el = document.createElement(bloque[0]);
+        el.textContent = bloque[1];
+        art.appendChild(el);
+      }
+    });
+
+    art.appendChild(botonCierre(a.cta));
+    contenido.appendChild(art);
+
+    history.replaceState(null, '', location.pathname + '#articulo=' + slug);
+    abrirLector();
+  }
+
+  function abrirIndice(){
+    limpiar();
+
+    var caja = document.createElement('div');
+    caja.className = 'indice';
+
+    var h1 = document.createElement('h1');
+    h1.className = 't-xl';
+    h1.textContent = 'Todos los artículos';
+
+    var sub = document.createElement('p');
+    sub.className = 'lead';
+    sub.style.marginBottom = '1.6rem';
+    sub.textContent = 'Material para quien está pensando en empezar, y para quien ya está en el camino.';
+
+    caja.appendChild(h1); caja.appendChild(sub);
+
+    var lista = document.createElement('div');
+    lista.className = 'notas-grid';
+    lista.style.gridTemplateColumns = '1fr';
+
+    ARTICULOS.forEach(function(a){
+      var c = tarjeta(a);
+      c.classList.remove('rev');
+      lista.appendChild(c);
+    });
+
+    caja.appendChild(lista);
+    contenido.appendChild(caja);
+    abrirLector();
+  }
+
+  document.getElementById('verTodos').addEventListener('click', abrirIndice);
+
+  /* Permite abrir un artículo directamente desde la URL */
+  if (location.hash.indexOf('#articulo=') === 0) {
+    abrirArticulo(location.hash.slice(10));
+  }
+
+})();
+</script>
+
+</body>
+</html>
