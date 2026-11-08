@@ -584,19 +584,14 @@ section{position:relative}
 .sello-fed{position:relative;width:230px;height:230px;justify-self:center}
 .sello-fed .arco{position:absolute;inset:0;animation:girar 44s linear infinite}
 .sello-fed .arco text{
-  font-family:var(--display);font-weight:800;font-size:11.6px;
-  letter-spacing:3.3px;fill:var(--oro);text-transform:uppercase;
+  font-family:var(--display);font-weight:800;font-size:13.5px;
+  letter-spacing:3px;fill:var(--oro);text-transform:uppercase;
 }
 .sello-fed .centro{
-  position:absolute;inset:34px;border-radius:50%;background:var(--negro);
-  border:1px solid var(--borde-fuerte);display:grid;place-items:center;
-  text-align:center;padding:1.2rem;box-shadow:0 0 54px rgba(233,184,36,.2);
+  position:absolute;inset:44px;border-radius:50%;
+  box-shadow:0 0 54px rgba(233,184,36,.22);
 }
-.sello-fed .centro strong{
-  display:block;font-family:var(--display);font-weight:900;font-size:1.5rem;
-  color:var(--oro);line-height:1;letter-spacing:.02em;
-}
-.sello-fed .centro small{display:block;font-size:.62rem;letter-spacing:.2em;color:var(--tx2-oscuro);margin-top:.5rem;text-transform:uppercase}
+.sello-fed .centro img{width:100%;height:100%;display:block;border-radius:50%}
 @keyframes girar{to{transform:rotate(360deg)}}
 .afiliacion-txt p{color:var(--tx2-oscuro)}
 .afiliacion-txt p+p{margin-top:1rem}
@@ -1359,14 +1354,11 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
     <div class="afiliacion">
       <div class="sello-fed rev" aria-hidden="true">
         <svg class="arco" viewBox="0 0 230 230">
-          <defs><path id="arco-sup" d="M 25,115 A 90,90 0 0 1 205,115"/>
-                 <path id="arco-inf" d="M 205,115 A 90,90 0 0 1 25,115"/></defs>
-          <text><textPath href="#arco-sup" startOffset="50%" text-anchor="middle">Escuela afiliada</textPath></text>
-          <text dy="12"><textPath href="#arco-inf" startOffset="50%" text-anchor="middle">Chinese Karate Federation</textPath></text>
+          <defs><path id="arco-circ" d="M 17,115 A 98,98 0 1 1 213,115 A 98,98 0 1 1 17,115"/></defs>
+          <text><textPath href="#arco-circ" textLength="612" lengthAdjust="spacing">Escuela afiliada · Chinese Karate Federation ·</textPath></text>
         </svg>
         <div class="centro">
-          <strong>Kenpo<br>Chile</strong>
-          <small>Red de escuelas</small>
+          <img src="img/insignia-cornejo.webp" alt="" width="140" height="140" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="afiliacion-txt rev">
