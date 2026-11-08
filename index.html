@@ -424,20 +424,20 @@ section{position:relative}
 
 /* --- Instructor: retrato en anillo dorado + texto (familia distinta) --- */
 .instructor{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center}
-.retrato{position:relative;max-width:400px;justify-self:center;width:100%}
+.retrato{position:relative;max-width:380px;justify-self:center;width:100%}
 .retrato .anillo{
-  position:absolute;inset:-16px;border-radius:50%;
+  position:absolute;inset:-16px;border-radius:calc(var(--r) + 16px);
   border:1px solid var(--borde);
 }
 .retrato .anillo::before{
-  content:'';position:absolute;inset:-14px;border-radius:50%;
+  content:'';position:absolute;inset:-14px;border-radius:calc(var(--r) + 30px);
   border:1px dashed rgba(233,184,36,.22);
 }
 .retrato figure{
-  position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;
+  position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;
   border:2px solid var(--oro);box-shadow:0 0 70px rgba(233,184,36,.2);
 }
-.retrato img{width:100%;height:100%;object-fit:cover;object-position:62% 6%;filter:saturate(.8) contrast(1.1) brightness(.9)}
+.retrato img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.8) contrast(1.1) brightness(.9)}
 .credencial{
   display:inline-flex;align-items:center;gap:.6rem;background:rgba(233,184,36,.09);
   border:1px solid var(--borde);border-radius:var(--r-pill);
@@ -1123,7 +1123,7 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
       <div class="retrato rev">
         <span class="anillo" aria-hidden="true"></span>
         <figure>
-          <img src="img/header-1.jpg" alt="El instructor Daniel Cornejo en posición de guardia de Kenpo Karate" loading="lazy" decoding="async" width="600" height="600">
+          <img src="img/header-1.jpg" alt="El instructor Daniel Cornejo en posición de guardia de Kenpo Karate" loading="lazy" decoding="async" width="600" height="750">
         </figure>
       </div>
       <div class="instructor-txt rev">
