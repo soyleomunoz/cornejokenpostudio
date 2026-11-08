@@ -604,17 +604,18 @@ section{position:relative}
 .afiliacion-txt .btn{margin-top:1.8rem}
 
 /* --- Galería: carril de fotografías reales --- */
-.galeria{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+.galeria{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gut);
   margin-inline:calc(var(--gut)*-1);padding:.3rem var(--gut) 1.5rem;
   scrollbar-width:thin;scrollbar-color:var(--oro-prof) transparent}
 .galeria::-webkit-scrollbar{height:5px}
 .galeria::-webkit-scrollbar-track{background:rgba(248,246,241,.07);border-radius:9px}
 .galeria::-webkit-scrollbar-thumb{background:var(--oro-prof);border-radius:9px}
 .galeria figure{
-  scroll-snap-align:start;flex:0 0 min(330px,78vw);aspect-ratio:4/3;
+  scroll-snap-align:start;flex:0 0 auto;height:clamp(230px,30vw,270px);aspect-ratio:4/3;
   border-radius:var(--r);overflow:hidden;border:1px solid var(--borde-neutro);
   transition:border-color .3s var(--ease);
 }
+.galeria figure.v{aspect-ratio:3/4}
 .galeria figure:hover{border-color:var(--borde-fuerte)}
 .galeria img{width:100%;height:100%;object-fit:cover;filter:saturate(.74) contrast(1.06) brightness(.84);transition:transform .6s var(--ease),filter .4s var(--ease)}
 .galeria figure:hover img{transform:scale(1.045);filter:saturate(.88) contrast(1.06) brightness(.94)}
@@ -1389,17 +1390,35 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
     <div class="cabecera rev" style="max-width:50ch">
       <h2 class="t-xl">La escuela <span class="oro">por dentro</span></h2>
       <div class="filete"></div>
-      <p class="lead">Exámenes de grado, entregas de certificados y clases compartidas con otras escuelas de la federación.</p>
+      <p class="lead">Exámenes de grado, combates controlados, entregas de certificados y clases compartidas con otras escuelas de la federación.</p>
     </div>
   </div>
   <div class="env" style="padding-inline:0">
     <div class="galeria rev">
-      <figure><img src="img/foto-10.jpg" alt="Grupo de alumnos de la escuela con sus medallas tras un examen de grado" loading="lazy" decoding="async" width="800" height="600"></figure>
-      <figure><img src="img/foto-01.jpg" alt="Alumnos recibiendo sus certificados de grado junto a los instructores" loading="lazy" decoding="async" width="800" height="600"></figure>
-      <figure><img src="img/foto-11.jpg" alt="Entrega de certificado a un alumno junto a los instructores de la federación" loading="lazy" decoding="async" width="800" height="600"></figure>
-      <figure><img src="img/foto-02.jpg" alt="Dos alumnas con cinturón verde y negro junto a su instructor" loading="lazy" decoding="async" width="800" height="600"></figure>
-      <figure><img src="img/foto-08.jpg" alt="Alumna recibiendo su certificado de grado acompañada por cuatro instructores" loading="lazy" decoding="async" width="800" height="600"></figure>
-      <figure><img src="img/foto-05.jpg" alt="Tres instructores de Kenpo Karate en posición de guardia" loading="lazy" decoding="async" width="800" height="600"></figure>
+      <figure><img src="img/galeria/g-01.jpg" alt="Instructores y alumnos de la escuela en formación sobre el tatami" loading="lazy" decoding="async" width="1200" height="891"></figure>
+      <figure><img src="img/galeria/g-02.jpg" alt="Foto grupal de alumnos e instructores de varias escuelas en una clase compartida" loading="lazy" decoding="async" width="1200" height="900"></figure>
+      <figure><img src="img/galeria/g-03.jpg" alt="Alumna recibiendo su certificado de grado junto a su instructor" loading="lazy" decoding="async" width="1200" height="900"></figure>
+      <figure class="v"><img src="img/galeria/g-04.jpg" alt="Alumnos con sus cinturones de colores junto a los instructores tras un examen de grado" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure><img src="img/galeria/g-05.jpg" alt="Instructores y un alumno pequeño en posición de guardia durante una clase compartida" loading="lazy" decoding="async" width="1200" height="900"></figure>
+      <figure class="v"><img src="img/galeria/g-06.jpg" alt="Instructor dirigiendo a los alumnos sentados alrededor del tatami durante un examen" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-07.jpg" alt="Alumnos infantiles posando con su instructor sobre el tatami" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-08.jpg" alt="Alumnos arrodillados en el tatami durante un examen de grado" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-09.jpg" alt="Combate controlado entre dos alumnos con protecciones, arbitrado por un instructor" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure><img src="img/galeria/g-10.jpg" alt="Instructores de la federación conversando en el gimnasio durante una jornada de exámenes" loading="lazy" decoding="async" width="1200" height="900"></figure>
+      <figure class="v"><img src="img/galeria/g-11.jpg" alt="Alumnos con protecciones de combate posando tras su participación" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-12.jpg" alt="Alumnos infantiles con sus cinturones junto a los instructores" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-13.jpg" alt="Grupo de alumnos e instructores en el tatami" loading="lazy" decoding="async" width="675" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-14.jpg" alt="Alumnos con protecciones junto a los instructores tras los combates" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure><img src="img/galeria/g-15.jpg" alt="Cinturones, medallas y trofeos preparados para la ceremonia de grados" loading="lazy" decoding="async" width="1200" height="903"></figure>
+      <figure><img src="img/galeria/g-16.jpg" alt="Alumnos premiados junto a los instructores en el gimnasio" loading="lazy" decoding="async" width="1200" height="900"></figure>
+      <figure class="v"><img src="img/galeria/g-17.jpg" alt="Instructores con cinturón negro en formación" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-18.jpg" alt="Alumna con protecciones frente a su compañero antes de un combate controlado" loading="lazy" decoding="async" width="903" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-19.jpg" alt="Instructores de la escuela en el gimnasio durante una jornada de exámenes" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-20.jpg" alt="Alumnos con sus uniformes junto a los instructores en el dojo" loading="lazy" decoding="async" width="540" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-21.jpg" alt="Alumno ejecutando una técnica en el tatami frente a sus compañeros" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure class="v"><img src="img/galeria/g-22.jpg" alt="Vista del gimnasio con alumnos practicando sobre el tatami" loading="lazy" decoding="async" width="900" height="1200" style="object-position:center 30%"></figure>
+      <figure><img src="img/galeria/g-23.jpg" alt="Instructores observando a un alumno durante una clase en el dojo" loading="lazy" decoding="async" width="1200" height="540"></figure>
+      <figure><img src="img/galeria/g-24.jpg" alt="Instructores y alumnos compartiendo después de una jornada de entrenamiento" loading="lazy" decoding="async" width="1200" height="901"></figure>
     </div>
   </div>
 </section>
