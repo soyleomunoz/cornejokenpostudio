@@ -592,6 +592,12 @@ section{position:relative}
   box-shadow:0 0 54px rgba(233,184,36,.22);
 }
 .sello-fed .centro img{width:100%;height:100%;display:block;border-radius:50%}
+.sello-fed.sello-hero{
+  position:absolute;right:-48px;bottom:-48px;width:clamp(160px,24vw,230px);height:auto;aspect-ratio:1;z-index:3;
+  border-radius:50%;background:radial-gradient(circle,rgba(14,13,12,.92) 62%,rgba(14,13,12,0) 72%);
+}
+.insignia-fed{width:230px;justify-self:center;border-radius:50%;box-shadow:0 0 60px rgba(233,184,36,.22)}
+.insignia-fed img{width:100%;height:auto;display:block;border-radius:50%}
 @keyframes girar{to{transform:rotate(360deg)}}
 .afiliacion-txt p{color:var(--tx2-oscuro)}
 .afiliacion-txt p+p{margin-top:1rem}
@@ -814,7 +820,8 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
   .duo,.instructor,.horarios,.afiliacion,.contacto{grid-template-columns:1fr}
   .instructor-txt,.afiliacion-txt{order:2}
   .retrato{max-width:300px}
-  .sello-fed{width:200px;height:200px}
+  .insignia-fed{width:200px}
+  .sello-fed.sello-hero{right:-18px;bottom:-30px}
   .valores{flex-direction:column;align-items:flex-start}
   .valores .btn{width:100%}
 }
@@ -893,8 +900,14 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
         <div class="marco-foto">
           <img src="img/header-1.jpg" alt="Práctica de Kenpo Karate al aire libre, dos practicantes en posición de guardia" width="800" height="1000" fetchpriority="high" decoding="async" style="object-position:center top">
         </div>
-        <div class="sello">
-          <img src="img/insignia-cornejo.webp" alt="Insignia de la escuela: cabeza de tigre en trazo blanco sobre círculo negro con letras doradas" width="148" height="148">
+        <div class="sello-fed sello-hero">
+          <svg class="arco" viewBox="0 0 230 230" aria-hidden="true">
+            <defs><path id="arco-circ" d="M 19,115 A 96,96 0 1 1 211,115 A 96,96 0 1 1 19,115"/></defs>
+            <text><textPath href="#arco-circ" textLength="600" lengthAdjust="spacing">Escuela afiliada · Chinese Karate Federation ·</textPath></text>
+          </svg>
+          <div class="centro">
+            <img src="img/insignia-cornejo.webp" alt="Insignia de la escuela: cabeza de tigre en trazo blanco sobre círculo negro con letras doradas" width="178" height="178" decoding="async">
+          </div>
         </div>
       </div>
     </div>
@@ -1352,14 +1365,8 @@ footer p.desc{color:var(--tx2-oscuro);font-size:.9rem;max-width:40ch}
 <section class="s-cafe" id="federacion">
   <div class="env">
     <div class="afiliacion">
-      <div class="sello-fed rev" aria-hidden="true">
-        <svg class="arco" viewBox="0 0 230 230">
-          <defs><path id="arco-circ" d="M 19,115 A 96,96 0 1 1 211,115 A 96,96 0 1 1 19,115"/></defs>
-          <text><textPath href="#arco-circ" textLength="600" lengthAdjust="spacing">Escuela afiliada · Chinese Karate Federation ·</textPath></text>
-        </svg>
-        <div class="centro">
-          <img src="img/insignia-cornejo.webp" alt="" width="178" height="178" loading="lazy" decoding="async">
-        </div>
+      <div class="insignia-fed rev">
+        <img src="img/insignia-cornejo.webp" alt="Insignia de International Cornejo Kenpo Studio" width="230" height="230" loading="lazy" decoding="async">
       </div>
       <div class="afiliacion-txt rev">
         <h2 class="t-xl">Escuela afiliada a <span class="oro">KenpoChile</span></h2>
