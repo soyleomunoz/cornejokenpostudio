@@ -1,0 +1,93 @@
+{
+  "site": "https://kenpocornejo.cl",
+  "nombre": "International Cornejo Kenpo Studio",
+  "lang": "es-CL",
+  "favicon": "img/insignia-cornejo.webp",
+  "firma": "Cornejo Kenpo Studio",
+  "ancla_blog": "#blog",
+  "logo_html": "<img src=\"img/insignia-cornejo.webp\" alt=\"\" width=\"40\" height=\"40\" style=\"margin-right:10px\">Cornejo Kenpo",
+  "nav": [
+    [
+      "Kenpo",
+      "#kenpo"
+    ],
+    [
+      "Grados",
+      "#cinturones"
+    ],
+    [
+      "Horarios",
+      "#horarios"
+    ],
+    [
+      "Blog",
+      "#blog"
+    ],
+    [
+      "Contacto",
+      "#contacto"
+    ]
+  ],
+  "cta": {
+    "titulo": "Tu primer cinturón comienza con una clase",
+    "texto": "Escríbele al director y coordina tu clase de prueba en Maipú.",
+    "boton": "Agenda tu clase de prueba",
+    "boton_corto": "Clase de prueba",
+    "url": "https://wa.me/56940395201?text=Hola%2C%20le%C3%AD%20el%20blog%20y%20quiero%20agendar%20una%20clase%20de%20prueba"
+  },
+  "fuentes_html": "<style id=\"local-fonts\">\n/* Tipografías alojadas en el sitio (Fontsource, licencia OFL) */\n@font-face{font-family:\"Montserrat\";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/montserrat-latin-600-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Montserrat\";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/montserrat-latin-700-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Montserrat\";font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/montserrat-latin-800-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Montserrat\";font-style:normal;font-weight:900;font-display:swap;src:url(assets/fonts/montserrat-latin-900-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Inter\";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Inter\";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format(\"woff2\")}\n@font-face{font-family:\"Inter\";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/inter-latin-600-normal.woff2) format(\"woff2\")}\n</style>",
+  "tema": {
+    "fondo": "#0E0D0C",
+    "fondo2": "#1A1714",
+    "texto": "#E9E4DA",
+    "suave": "#A39C93",
+    "acento": "#E9B824",
+    "acento2": "#C9971A",
+    "borde": "rgba(233,184,36,.18)",
+    "titulos": "#F8F6F1",
+    "boton_texto": "#0E0D0C",
+    "fuente_titulos": "'Montserrat',sans-serif",
+    "fuente_texto": "'Inter',sans-serif",
+    "h1_max": "2.4rem"
+  },
+  "og_home": {
+    "imagen": "img/header-1.jpg",
+    "kicker": "Kenpo Karate en Maipú",
+    "titulo": "Entrena con disciplina. Avanza con confianza.",
+    "posicion": "center 7%"
+  },
+  "fuente": {
+    "literal": "ARTICULOS",
+    "formato": "tuplas",
+    "escapar_texto": true,
+    "categoria_defecto": "Kenpo Karate",
+    "campos": {
+      "slug": "slug",
+      "titulo": "titulo",
+      "resumen": "bajada",
+      "fecha": "fecha",
+      "portada": "img",
+      "portada_alt": "alt",
+      "cuerpo": "cuerpo",
+      "categoria": "",
+      "lectura": ""
+    }
+  },
+  "llms": {
+    "resumen": "Escuela de Kenpo Karate en Maipú dirigida por el instructor Daniel Cornejo, Black Belt. Defensa personal, disciplina y condición física para todas las edades. Escuela afiliada a KenpoChile. Agenda tu clase de prueba.",
+    "datos": [
+      "Instructor y director: Daniel Cornejo",
+      "Escuela afiliada a KenpoChile (https://kenpochile.cl/)",
+      "WhatsApp del director: +56 9 4039 5201",
+      "Sedes en Maipú: Hurtado 1709 (entre semana) y Ramón Freire 786, esquina Av. San Alberto Hurtado (sábados)"
+    ],
+    "paginas": [
+      [
+        "Inicio",
+        "",
+        "qué es el Kenpo, beneficios, grados y cinturones, instructor, horarios y sedes, blog y contacto"
+      ]
+    ],
+    "titulo_blog": "Artículos"
+  }
+}
