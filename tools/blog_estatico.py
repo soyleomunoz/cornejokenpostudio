@@ -171,7 +171,8 @@ def articulos():
             'key': key, 'slug': slug, 'titulo': titulo,
             'resumen': g('resumen') or '', 'categoria': g('categoria') or f.get('categoria_defecto', 'Blog'),
             'fecha': g('fecha'), 'lectura': g('lectura'),
-            'portada': g('portada'), 'portada_alt': g('portada_alt') or titulo,
+            'portada': g('portada') or (f['portada_patron'].format(slug=slug) if f.get('portada_patron') else None),
+            'portada_alt': g('portada_alt') or titulo,
             'html': cuerpo_a_html(g('cuerpo'), f.get('formato', 'html'), f.get('escapar_texto', False)),
         }
         if not art['lectura']:
@@ -234,6 +235,8 @@ def pagina(a, todos):
     logo = CFG['logo_html'].replace('src="', 'src="../') if 'src="' in CFG['logo_html'] else CFG['logo_html']
     creditos = CFG.get('creditos_html', 'Desarrollado por <a href="https://gestixpro.cl/" target="_blank" rel="noopener">GestixPro</a>')
     fuentes = CFG.get('fuentes_html', '').replace('url(assets/', 'url(../assets/')
+    fav = CFG.get('favicon', 'favicon.ico')
+    fav = fav if fav.startswith(('data:', 'http')) else '../' + fav
     nota = f'<p class="note">{CFG["nota_articulo"]}</p>' if CFG.get('nota_articulo') else ''
     return f'''<!DOCTYPE html>
 <html lang="{CFG.get('lang', 'es-CL')}">
@@ -261,7 +264,7 @@ def pagina(a, todos):
 <meta name="twitter:title" content="{E(a['titulo'])}">
 <meta name="twitter:description" content="{E(a['resumen'])}">
 <meta name="twitter:image" content="{og}">
-<link rel="icon" href="../{CFG.get('favicon', 'favicon.ico')}">
+<link rel="icon" href="{fav}">
 <script type="application/ld+json">{json.dumps(ld_post, ensure_ascii=False)}</script>
 <script type="application/ld+json">{json.dumps(ld_bc, ensure_ascii=False)}</script>
 {fuentes}
@@ -329,26 +332,31 @@ footer{{border-top:1px solid var(--bd);color:var(--mu);font-size:.88rem;padding:
 
 
 # ── Imágenes para compartir (1200x630) ────────────────────────────────────────
-def html_og(img_rel, kicker, titulo, pie, estilo=None, posicion='center'):
+def html_og(img_rel, kicker, titulo, pie, estilo=None, posicion='center', fondo_css=None):
     t = CFG['tema']
     img = f'file://{os.path.join(ROOT, img_rel)}' if img_rel else ''
     fuentes = CFG.get('fuentes_html', '').replace('url(assets/', f'url(file://{ROOT}/assets/')
     fondo = (f'<img class="bg" src="{img}" style="object-position:{posicion}">' if img else '')
+    if img and estilo == 'lateral':
+        # Imagen recortada o de producto (PNG) a la derecha, texto a la izquierda
+        fondo = f'<img class="lat" src="{img}">'
     if img and (estilo or CFG.get('og_estilo', 'portada')) == 'portada':
         # La imagen para compartir es la misma portada, recortada a 1200x630
         return f'<!DOCTYPE html><html><head><meta charset="utf-8"><style>*{{margin:0}}body{{width:1200px;height:630px;overflow:hidden;background:{t["fondo"]}}}.bg{{width:100%;height:100%;object-fit:cover;display:block}}</style></head><body>{fondo}</body></html>'
     tam = 64 if len(titulo) < 60 else 54 if len(titulo) < 95 else 46
     return f'''<!DOCTYPE html><html><head><meta charset="utf-8">{fuentes}<style>
 *{{margin:0;box-sizing:border-box}}body{{width:1200px;height:630px;overflow:hidden;position:relative;
-background:linear-gradient(135deg,{t['fondo']},{t['acento']});font-family:{t['fuente_texto']}}}
+background:{fondo_css or 'linear-gradient(135deg,' + t['fondo'] + ',' + t['acento'] + ')'};font-family:{t['fuente_texto']}}}
 .bg{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
+.lat{{position:absolute;right:40px;top:40px;width:470px;height:550px;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}}
+body.l .tx{{right:540px;bottom:auto;top:50%;transform:translateY(-50%)}}body.l .sh{{background:none}}
 .sh{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 20%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.88))}}
 .tx{{position:absolute;left:64px;right:64px;bottom:56px;color:#fff}}
 .k{{display:inline-block;font-size:22px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:{t['acento']};color:{t.get('boton_texto', '#fff')};padding:8px 18px;border-radius:999px;margin-bottom:20px}}
 h1{{font-family:{t['fuente_titulos']};font-size:{tam}px;line-height:1.12;font-weight:800;text-shadow:0 2px 18px rgba(0,0,0,.4);
 display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}}
 .p{{margin-top:22px;font-size:24px;font-weight:600;opacity:.92}}
-</style></head><body>{fondo}<div class="sh"></div><div class="tx">
+</style></head><body class="{'l' if img and estilo == 'lateral' else ''}">{fondo}<div class="sh"></div><div class="tx">
 {f'<span class="k">{E(kicker)}</span>' if kicker else ''}<h1>{E(titulo)}</h1><p class="p">{E(pie)}</p></div></body></html>'''
 
 
@@ -457,7 +465,7 @@ def main():
         home = os.path.join(ROOT, 'og-image.jpg')
         oh = CFG.get('og_home')
         if oh and (args.og_home or not os.path.exists(home)):
-            trabajos.append((html_og(oh.get('imagen'), oh.get('kicker', ''), oh['titulo'], pie, oh.get('estilo', 'titular'), oh.get('posicion', 'center')), home))
+            trabajos.append((html_og(oh.get('imagen'), oh.get('kicker', ''), oh['titulo'], pie, oh.get('estilo', 'titular'), oh.get('posicion', 'center'), oh.get('fondo')), home))
         renderizar(trabajos)
         if arts:
             huellas = {k: v for k, v in huellas.items() if k in vigentes}
